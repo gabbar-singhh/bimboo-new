@@ -1,0 +1,141 @@
+.heroMain {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.8;
+
+    background-image: radial-gradient(circle at center center, #562790, #e5e5f7), repeating-radial-gradient(circle at center center, #562790, #562790, 10px, transparent 20px, transparent 100px);
+
+    background-blend-mode: multiply;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.blurredOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Whitish layer */
+    backdrop-filter: blur(8px);
+    /* Apply blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    /* Safari fix */
+    z-index: 1;
+    /* Ensure it's above the background but below content */
+
+    background: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.88) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #000 0%, rgba(0, 0, 0, 0.88) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #000 0%, rgba(0, 0, 0, 0.88) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #000 0%, rgba(0, 0, 0, 0.88) 50%) top right / 50% 50% no-repeat;
+}
+
+.heroMain .navMain {
+    background-color: #141414;
+    border-radius: 1.15rem;
+    border: 1px solid #c7c7c70f;
+
+    position: fixed;
+    top: 18px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 248px;
+    padding: 1.4rem 2.2rem 1.4rem 1.8rem;
+}
+
+.navMain ul {
+    color: #ebebeb;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.4px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.navMain ul li {
+    transition: all 500ms ease-in-out;
+}
+
+.navMain ul li:hover {
+    color: #ebebeba6;
+}
+
+/* 
+.navMain ul .get_started {
+    background-color: var(--primary);
+    padding: 1rem 1.6rem;
+    border-radius: 3.25rem;
+    border: 1px solid #7f7f7f33;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+    margin-left: 1.8rem;
+}
+
+.navMain ul .get_started:hover {
+    color: #fff;
+    background-color: #492D6C;
+} */
+
+.heroMain .heroContainer {
+    z-index: 2;
+}
+
+.heroMain .heroContainer h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 125%;
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.heroMain .heroContainer p {
+    width: 572px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 145%;
+    color: #ebebeba6;
+    font-weight: normal;
+    margin-bottom: 1.8rem;
+}
+
+
+.heroMain .heroContainer .ctaButton {
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+
+    border: 1px solid #fff;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 1.2rem 2.4rem;
+    border-radius: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}

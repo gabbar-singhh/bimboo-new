@@ -1,0 +1,66 @@
+.brandsMain {
+    padding: 96px 0;
+}
+
+.brandsMain h2 {
+    text-align: center;
+    color: #bababa;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+}
+
+.logos {
+    overflow: hidden;
+    padding-top: 1.8rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    /* background: linear-gradient(to left, #fff0, #131313); */
+}
+
+.logos:after {
+    right: 0;
+    /* background: linear-gradient(to right, #fff0, #131313); */
+}
+
+.logos:hover .logosSlide {
+    animation-play-state: paused;
+}
+
+.logosSlide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logosSlide img {
+    margin: 0 40px;
+    /* filter: grayscale(100%); */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
