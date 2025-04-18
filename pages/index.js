@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import HeroSection from "@/Components/HeroSection/HeroSection";
 import BrandsWorked from "@/Components/BrandsWorked/BrandsWorked";
+import CoreProblems from "@/Components/CoreProblems/CoreProblems";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <BrandsWorked />
+        <CoreProblems/>
       </main>
     </>
   );

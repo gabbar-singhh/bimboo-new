@@ -5,8 +5,7 @@ const BrandsWorked = () => {
   return (
     <div className={styles.brandsMain}>
       <h2>
-        Worked with brands across various projects, collabs & volunteer
-        initiatives
+        Worked with brands across various projects, collabs & other initiatives
       </h2>
 
       <div className={styles.logos}>

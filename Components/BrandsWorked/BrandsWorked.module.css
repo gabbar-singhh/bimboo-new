@@ -11,12 +11,12 @@
     letter-spacing: 0.4px;
     word-spacing: 1px;
     line-height: 145%;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .logos {
     overflow: hidden;
-    padding-top: 1.8rem;
+    padding-top: 2.4rem;
     white-space: nowrap;
     position: relative;
 }
