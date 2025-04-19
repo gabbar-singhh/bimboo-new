@@ -33,7 +33,7 @@ const CoreProblems = () => {
       </ul>
 
       <p className={styles.problemsText}>
-        if this is you, here's how we can help you exactly
+        If this sounds like you, here's how Bimboo can help
       </p>
     </section>
   );

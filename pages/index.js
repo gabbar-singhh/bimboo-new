@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import HeroSection from "@/Components/HeroSection/HeroSection";
 import BrandsWorked from "@/Components/BrandsWorked/BrandsWorked";
 import CoreProblems from "@/Components/CoreProblems/CoreProblems";
-
+import CardStacking from "@/Components/CardStacking/CardStacking";
 
 export default function Home() {
   return (
@@ -17,7 +17,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <BrandsWorked />
-        <CoreProblems/>
+        <CoreProblems />
+        <CardStacking />
       </main>
     </>
   );

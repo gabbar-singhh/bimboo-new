@@ -4,7 +4,7 @@ import styles from "./HeroSection.module.css";
 const HeroSection = () => {
   return (
     <section className={styles.heroMain}>
-      <div class={styles.blurredOverlay}></div>
+      <div className={styles.blurredOverlay}></div>
       <nav className={styles.navMain}>
         <div className={styles.logoImg}>
           <img src="/logo-type.svg" alt="logo" height={"28px"} width={"auto"} />
