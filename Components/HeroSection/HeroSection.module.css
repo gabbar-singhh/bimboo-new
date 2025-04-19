@@ -70,22 +70,6 @@
     color: #ebebeba6;
 }
 
-/* 
-.navMain ul .get_started {
-    background-color: var(--primary);
-    padding: 1rem 1.6rem;
-    border-radius: 3.25rem;
-    border: 1px solid #7f7f7f33;
-    color: #fff;
-    transition: all 400ms ease-in-out;
-    margin-left: 1.8rem;
-}
-
-.navMain ul .get_started:hover {
-    color: #fff;
-    background-color: #492D6C;
-} */
-
 .heroMain .heroContainer {
     z-index: 2;
 }

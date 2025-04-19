@@ -4,6 +4,7 @@ import HeroSection from "@/Components/HeroSection/HeroSection";
 import BrandsWorked from "@/Components/BrandsWorked/BrandsWorked";
 import CoreProblems from "@/Components/CoreProblems/CoreProblems";
 import CardStacking from "@/Components/CardStacking/CardStacking";
+import CaseStudy from "@/Components/CaseStudy/CaseStudy";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <BrandsWorked />
         <CoreProblems />
         <CardStacking />
+        <CaseStudy/>
       </main>
     </>
   );
