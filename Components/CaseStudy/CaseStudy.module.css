@@ -1,6 +1,142 @@
-.caseMain h1 {
+.caseMain {
+    margin: 56px auto;
+    max-width: 1200px;
+    margin-bottom: 124px;
+}
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .headerLeft h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 155%;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.header .headerLeft p {
+    color: #bababa;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 556px;
+}
+
+.header .headerRight {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.header .headerRight .btns {
     color: #fff;
-    text-align: center;
+    border: 1px solid #fff;
+    padding: 1rem 1.8rem;
+    border-radius: 0.25rem;
+}
 
+.caseContainer {
+    margin-top: 3.6rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1.8rem;
+}
+
+.caseContainer::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* CASE STUDY CARD */
+.card {
+    border: 1px solid rgb(199 199 199 / 23%);
+    border-radius: 0.875rem;
+    padding: 1.4rem;
+    background-color: #121212;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.cardImg {
+    border-radius: 0.5rem;
+    width: 800px;
+    height: auto;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cardContent .cardTitle {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 150%;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.cardContent .cardDesc {
+    color: #bababa;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    line-height: 155%;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.cardContent .cardButtonGroup {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+}
+
+
+.cardButtonGroup .readNow,
+.cardButtonGroup .download {
+    color: #fff;
+    background-color: #1a161e;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 400ms ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+
+.cardButtonGroup .readNow:hover,
+.cardButtonGroup .download:hover {
+    color: #fff;
+    background-color: #221d27;
+    border: 1px solid #9696960d;
 }
