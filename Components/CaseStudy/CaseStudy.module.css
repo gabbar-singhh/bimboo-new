@@ -56,7 +56,6 @@
     color: #fff;
     background-color: #221d27;
     border: 1px solid #9696960d;
-
 }
 
 .caseContainer {
@@ -101,7 +100,7 @@
 
 .cardImg {
     border-radius: 0.5rem;
-    width: 800px;
+    width: 500px;
     height: auto;
 }
 
