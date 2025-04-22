@@ -1,0 +1,98 @@
+.aboutMain {
+    margin: 142px auto;
+    max-width: 1200px;
+    margin-bottom: 124px;
+}
+
+.aboutMain .aboutContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 2.4rem;
+}
+
+.aboutContainer .aboutContent {
+    color: #fff;
+}
+
+.aboutContent h1 {
+    margin-top: 0.25rem;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 155%;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+}
+
+.aboutContent p {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    line-height: 150%;
+    color: #bababa;
+    font-weight: 400;
+    width: 586px;
+}
+
+.aboutContent .ctaButtons {
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.ctaButtons .bookBtn {
+    color: #fff;
+    background-color: var(--primary);
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+
+    display: block;
+    padding: 1.2rem 1.4rem;
+    border-radius: 6px;
+
+    transition: all 400ms ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.ctaButtons .bookBtn:hover {
+    background-color: #773bc1;
+    border: 1px solid #585858;
+}
+
+.ctaButtons .linkedinBtn {
+    color: #fff;
+    background-color: #1a161e;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+
+    display: block;
+    padding: 1.2rem 1.4rem;
+    border-radius: 6px;
+
+    transition: all 400ms ease-in-out;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.ctaButtons .linkedinBtn:hover {
+    color: #fff;
+    background-color: #221d27;
+    border: 1px solid #9696960d;
+}
+
+.aboutImg {
+    width: 40%;
+    height: auto;
+    border-radius: 1.8rem;
+}

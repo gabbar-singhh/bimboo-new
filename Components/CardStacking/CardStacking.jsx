@@ -4,6 +4,7 @@ import { projects } from "./data";
 import Card from "./Card";
 import React, { useRef } from "react";
 import { useScroll } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   const container = useRef(null);
@@ -31,7 +32,7 @@ export default function Home() {
       })}
       <div className={styles.wrapperCTA}>
         {/* 🔴 add shiny button animation and update the text also */}
-        <div className={styles.ctaButton}>
+        <Link className={styles.ctaButton} href={"/"}>
           Secure Your April Slot NOW!
           <img
             src="/icons/arrow-right.svg"
@@ -39,7 +40,7 @@ export default function Home() {
             height={"26px"}
             width={"auto"}
           />
-        </div>
+        </Link>
       </div>
     </main>
   );

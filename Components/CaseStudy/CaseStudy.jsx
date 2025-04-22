@@ -57,7 +57,7 @@ const CaseStudy = () => {
         <div className={styles.headerLeft}>
           <h1>the work we did</h1>
           <p>
-            The unfiltered story behind our project—challenges, process, tools,
+            The unfiltered story behind our project—challenges, process,
             and how we made it.
           </p>
         </div>
@@ -89,6 +89,7 @@ const CaseStudy = () => {
                 <div className={styles.cardButtonGroup}>
                   <Link
                     href={caseStudy.pageURL}
+                    target="_blank"
                     className={`${styles.readNow}`}
                   >
                     Read Now{" "}

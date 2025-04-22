@@ -5,6 +5,8 @@ import BrandsWorked from "@/Components/BrandsWorked/BrandsWorked";
 import CoreProblems from "@/Components/CoreProblems/CoreProblems";
 import CardStacking from "@/Components/CardStacking/CardStacking";
 import CaseStudy from "@/Components/CaseStudy/CaseStudy";
+import AboutMe from "@/Components/AboutMe/AboutMe";
+import Testimonial from "@/Components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -20,7 +22,9 @@ export default function Home() {
         <BrandsWorked />
         <CoreProblems />
         <CardStacking />
-        <CaseStudy/>
+        <CaseStudy />
+        <AboutMe />
+        <Testimonial />
       </main>
     </>
   );
