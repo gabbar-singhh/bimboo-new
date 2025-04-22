@@ -7,6 +7,7 @@ import CardStacking from "@/Components/CardStacking/CardStacking";
 import CaseStudy from "@/Components/CaseStudy/CaseStudy";
 import AboutMe from "@/Components/AboutMe/AboutMe";
 import Testimonial from "@/Components/Testimonial/Testimonial";
+import TestimonialStack from "@/Components/Testimonial/TestimonialStack";
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
         <CoreProblems />
         <CardStacking />
         <CaseStudy />
-        <AboutMe />
-        <Testimonial />
+        {/* <AboutMe /> */}
+        <TestimonialStack/>
       </main>
     </>
   );

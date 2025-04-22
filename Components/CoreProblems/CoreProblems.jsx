@@ -5,8 +5,8 @@ import { motion, useInView } from "framer-motion";
 
 const boxVariants = [
   { x: -200, y: -200, rotate: 120 }, // Box 1
-  { x: 0, y: 200, rotate: 75 },     // Box 2
-  { x: 200, y: 200, rotate: 30 },   // Box 3
+  { x: 0, y: 200, rotate: 75 }, // Box 2
+  { x: 200, y: 200, rotate: 30 }, // Box 3
 ];
 
 const CoreProblems = () => {
@@ -34,7 +34,8 @@ const CoreProblems = () => {
           >
             <h3 className={styles.boxCount}>{num}</h3>
             <p className={styles.boxText}>
-              {i === 0 && `Your unfair advantage is buried under weak storytelling and poor messaging.`}
+              {i === 0 &&
+                `Your unfair advantage is buried under weak storytelling and poor messaging.`}
               {i === 1 && (
                 <>
                   Your website is slow, outdated, and falling apart on mobile.
@@ -61,7 +62,3 @@ const CoreProblems = () => {
 };
 
 export default CoreProblems;
-
-
-
-

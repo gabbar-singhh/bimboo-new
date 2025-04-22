@@ -5,6 +5,7 @@ import Card from "./Card";
 import React, { useRef } from "react";
 import { useScroll } from "framer-motion";
 import Link from "next/link";
+import getCurrentMonth from "@/utils/getCurrentMonth";
 
 export default function Home() {
   const container = useRef(null);
@@ -14,6 +15,8 @@ export default function Home() {
 
     offset: ["start start", "end end"],
   });
+
+  const CALENDAR_LINK = "https://cal.com/work-with-bimboo/30min";
 
   return (
     <main className={styles.container} ref={container}>
@@ -32,12 +35,12 @@ export default function Home() {
       })}
       <div className={styles.wrapperCTA}>
         {/* 🔴 add shiny button animation and update the text also */}
-        <Link className={styles.ctaButton} href={"/"}>
-          Secure Your April Slot NOW!
+        <Link className={styles.ctaButton} href={CALENDAR_LINK}>
+          Secure Your {getCurrentMonth()} Slot
           <img
-            src="/icons/arrow-right.svg"
+            src="/icons/arrow-up-right.svg"
             alt="arrow right"
-            height={"26px"}
+            height={"22px"}
             width={"auto"}
           />
         </Link>

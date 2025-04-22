@@ -21,27 +21,28 @@
   left: 50%;
   transform: translateX(-50%);
 
+
   color: #fff;
-  background-color: #3d0b7b;
-  font-size: 1.2rem;
-  letter-spacing: 0.4px;
+  background-color: var(--primary);
+  letter-spacing: 1px;
   word-spacing: 1px;
   line-height: 145%;
-  font-weight: 500;
-  margin: 0 auto;
-  width: fit-content;
-  padding: 1.2rem 2.4rem;
-  border-radius: 4rem;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1.2rem 1.8rem;
+  border-radius: 6rem;
 
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  text-align: center;
-  transition: all 600ms ease-in-out;
+
+  transition: all 400ms ease-in-out;
+  border: 1px solid transparent;
 }
 
-
 .container .ctaButton:hover {
-  background-color: #3d0b7bb5;
+  background-color: #773bc1;
+  border: 1px solid #585858;
 }

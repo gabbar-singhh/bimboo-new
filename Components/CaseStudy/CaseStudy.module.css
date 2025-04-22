@@ -1,7 +1,7 @@
 .caseMain {
     margin: 56px auto;
-    max-width: 1200px;
     margin-bottom: 124px;
+    max-width: 1200px;
 }
 
 .header {
@@ -65,10 +65,23 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     gap: 1.8rem;
+    position: relative;
 }
 
 .caseContainer::-webkit-scrollbar {
     display: none;
+}
+
+
+.caseContainer::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 36px;
+    height: 100%;
+    background: linear-gradient(to left, #0a0a0a52, transparent);
+    z-index: 2;
 }
 
 
