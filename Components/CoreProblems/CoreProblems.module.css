@@ -23,7 +23,7 @@
 
 .problemsMain .problemsContainer {
     list-style-type: none;
-margin-top: 2.4rem;
+    margin-top: 2.4rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 1.25em;
