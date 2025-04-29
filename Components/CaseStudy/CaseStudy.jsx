@@ -57,8 +57,8 @@ const CaseStudy = () => {
         <div className={styles.headerLeft}>
           <h1>the work we did</h1>
           <p>
-            The unfiltered story behind our project—challenges, process,
-            and how we made it.
+            The unfiltered story behind our project—challenges, process, and how
+            we made it.
           </p>
         </div>
         <div className={styles.headerRight}>
@@ -92,21 +92,13 @@ const CaseStudy = () => {
                     target="_blank"
                     className={`${styles.readNow}`}
                   >
-                    Read Now{" "}
+                    View Case Study
                     <img
                       src="/icons/arrow-up-right.svg"
                       alt="arrow"
                       height={"20px"}
                     />
                   </Link>
-                  <div className={`${styles.download}`}>
-                    Download as PDF{" "}
-                    <img
-                      src="/icons/download.svg"
-                      alt="arrow"
-                      height={"20px"}
-                    />
-                  </div>
                 </div>
               </div>
             </div>

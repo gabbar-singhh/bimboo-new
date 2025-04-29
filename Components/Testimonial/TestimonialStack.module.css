@@ -12,10 +12,12 @@
 }
 
 .container {
-    padding: 136px 0;
+    padding: 136px 0 96px 0;
     margin: 0 auto;
     border-top-right-radius: 1.4rem;
     border-top-left-radius: 1.4rem;
+
+    border-radius: 1.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;

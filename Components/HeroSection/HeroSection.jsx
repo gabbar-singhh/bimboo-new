@@ -73,7 +73,6 @@ const HeroSection = () => {
         </p>
 
         <Link href={CALENDAR_LINK} className={styles.ctaButton}>
-        <div className={styles.glow}></div>
           Book a Free Discovery Call{" "}
           <img
             src="/icons/arrow-up-right-fancy.svg"

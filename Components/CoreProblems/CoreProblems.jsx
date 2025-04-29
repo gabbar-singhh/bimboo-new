@@ -11,12 +11,13 @@ const boxVariants = [
 
 const CoreProblems = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <section className={styles.problemsMain} ref={ref}>
       <h2 className={styles.problemsHeading}>
-        Great Product, No Customers? <br /> Your website isn't working for you
+        Great Product, No Customers? <br />{" "}
+        <span className={styles.climax}>Your website isn't working for you</span>
       </h2>
 
       <ul className={styles.problemsContainer}>
