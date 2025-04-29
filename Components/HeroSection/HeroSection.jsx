@@ -36,18 +36,6 @@ const HeroSection = () => {
     <section className={styles.heroMain}>
       <div className={styles.blurredOverlay}></div>
 
-      <nav className={styles.navMain}>
-        <div className={styles.logoImg}>
-          <img src="/logo-type.svg" alt="logo" height="28px" width="auto" />
-        </div>
-        <ul>
-          <li>Services</li>
-          <li>Process</li>
-          <li>Case Study</li>
-          <li>Testimonials</li>
-        </ul>
-      </nav>
-
       <div className={styles.heroContainer}>
         {/* Floating Cursors */}
         <div

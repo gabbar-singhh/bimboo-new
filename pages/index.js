@@ -9,6 +9,7 @@ import AboutMe from "@/Components/AboutMe/AboutMe";
 import Testimonial from "@/Components/Testimonial/Testimonial";
 import TestimonialStack from "@/Components/Testimonial/TestimonialStack";
 import MicDrop from "@/Components/MicDrop/MicDrop";
+import Navbar from "@/Components/Navbar/Navbar";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <link rel="icon" href="logo.png" />
       </Head>
       <main>
+        <Navbar/>
         <HeroSection />
         <BrandsWorked />
         <CoreProblems />
