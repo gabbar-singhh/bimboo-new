@@ -20,6 +20,46 @@
   transform-origin: top;
   background-color: #121212;
   border: 1px solid #c7c7c73b;
+
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+  animation: floatUpDown 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.card::before {
+  background-image: url("/service/research-check.png");
+  top: 55%;
+  right: 32%;
+}
+
+.card::after {
+  background-image: url("/service/strategy-check.png");
+  top: 20%;
+  right: 2%;
+  animation-delay: 2s;
+}
+
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .card .body {
@@ -53,26 +93,8 @@
   margin-bottom: 0.75rem;
 }
 
-.card .cardImg {
+.cardImg {
   height: 100%;
   width: 100%;
   border-radius: 1.15rem;
-
-}
-
-.cardContainer .card .body .imageContainer {
-  position: relative;
-  width: 60%;
-  height: 100%;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.cardContainer .card .body .imageContainer .inner {
-  width: 100%;
-  height: 100%;
-}
-
-.cardContainer .card .body .imageContainer img {
-  object-fit: cover;
 }

@@ -33,11 +33,11 @@ const Card = ({ i, title, description, src, progress, range, targetScale }) => {
           ></div>
         </div>
         <motion.img
-        style={{ scale: imageScale }}
+          style={{ scale: imageScale }}
           className={styles.cardImg}
           src={`/${src}`}
           alt="image"
-          />
+        />
       </div>
     </div>
   );

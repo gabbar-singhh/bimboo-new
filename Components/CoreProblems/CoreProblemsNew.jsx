@@ -16,7 +16,7 @@ const CoreProblemsNew = () => {
       </Fade>
 
       <ul className={styles.problemsContainer}>
-        <Fade cascade damping={0.15} duration={3000}>
+        <Fade cascade damping={0.15} triggerOnce duration={3000}>
           <li className={`${styles.box} ${styles.box1}`}>
             <h3 className={styles.boxCount}>1</h3>
             <p className={styles.boxText}>
