@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import styles from "./CaseStudy.module.css";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const CaseStudy = () => {
   const scrollRef = useRef(null);
@@ -55,11 +56,15 @@ const CaseStudy = () => {
     <section className={styles.caseMain}>
       <div className={styles.header}>
         <div className={styles.headerLeft}>
-          <h1>the work we did</h1>
-          <p>
-            The unfiltered story behind our project—challenges, process, and how
-            we made it.
-          </p>
+          <Fade delay={0} duration={1500} triggerOnce>
+            <h1>the work we did</h1>
+          </Fade>
+          <Fade delay={200} duration={1500} triggerOnce>
+            <p>
+              The unfiltered story behind our project—challenges, process, and
+              how we made it.
+            </p>
+          </Fade>
         </div>
         <div className={styles.headerRight}>
           <div onClick={scrollLeft} className={styles.btns}>
@@ -72,38 +77,40 @@ const CaseStudy = () => {
       </div>
 
       <div ref={scrollRef} className={styles.caseContainer}>
-        {CASE_STUDY_DATA.map((caseStudy, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardContainer}>
-              <img
-                className={styles.cardImg}
-                src={caseStudy.imageSrc}
-                alt="website img"
-              />
+        <Fade cascade damping={0.15} duration={2000}>
+          {CASE_STUDY_DATA.map((caseStudy, index) => (
+            <div key={index} className={styles.card}>
+              <div className={styles.cardContainer}>
+                <img
+                  className={styles.cardImg}
+                  src={caseStudy.imageSrc}
+                  alt="website img"
+                />
 
-              <div className={styles.cardContent}>
-                <span>
-                  <h1 className={styles.cardTitle}>{caseStudy.title}</h1>
-                  <p className={styles.cardDesc}>{caseStudy.description}</p>
-                </span>
-                <div className={styles.cardButtonGroup}>
-                  <Link
-                    href={caseStudy.pageURL}
-                    target="_blank"
-                    className={`${styles.readNow}`}
-                  >
-                    View Case Study
-                    <img
-                      src="/icons/arrow-up-right.svg"
-                      alt="arrow"
-                      height={"20px"}
-                    />
-                  </Link>
+                <div className={styles.cardContent}>
+                  <span>
+                    <h1 className={styles.cardTitle}>{caseStudy.title}</h1>
+                    <p className={styles.cardDesc}>{caseStudy.description}</p>
+                  </span>
+                  <div className={styles.cardButtonGroup}>
+                    <Link
+                      href={caseStudy.pageURL}
+                      target="_blank"
+                      className={`${styles.readNow}`}
+                    >
+                      View Case Study
+                      <img
+                        src="/icons/arrow-up-right.svg"
+                        alt="arrow"
+                        height={"20px"}
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Fade>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ export const projects = [
     title: "Research-Based Messaging Strategy",
     description:
       "<p> We dig deep into your business, understand your USP, and identify what sets you apart from competitors. We build a website strategy that gets results. By analyzing your specific audience and market, we create clear messaging that connects and drives action.</p> <p>Our website copy speaks directly to your ideal customers—considering where they live, their age range, and how they make decisions online.</p>",
-    src: "card1.png",
+    src: "service/1.png",
     link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
   },
   {

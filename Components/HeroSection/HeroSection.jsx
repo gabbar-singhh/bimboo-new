@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./HeroSection.module.css";
 import Link from "next/link";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const HeroSection = () => {
   const CALENDAR_LINK = "https://cal.com/work-with-bimboo/30min";
@@ -11,25 +12,24 @@ const HeroSection = () => {
   const yellowRef = useRef(null);
   const violetRef = useRef(null);
 
+  const moveCursor = (ref) => {
+    if (ref.current) {
+      const randomX = Math.random() * 50 - 25; // Random move within 50px horizontally (-25 to 25)
+      const randomY = Math.random() * 50 - 25; // Random move within 50px vertically (-25 to 25)
+
+      ref.current.style.transition = "transform 2s ease-in-out"; // Smooth transition
+      ref.current.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    }
+  };
+
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      const { clientX, clientY } = e;
+    const moveInterval = setInterval(() => {
+      moveCursor(greenRef);
+      moveCursor(yellowRef);
+      moveCursor(violetRef);
+    }, 2000); // Every 2 seconds, the position will change randomly.
 
-      const moveCursor = (ref, offsetX, offsetY) => {
-        if (ref.current) {
-          ref.current.style.transform = `translate(${
-            2 * clientX * offsetX
-          }px, ${2 * clientY * offsetY}px)`;
-        }
-      };
-
-      moveCursor(greenRef, 0.015, 0.015);
-      moveCursor(yellowRef, 0.02, 0.02);
-      moveCursor(violetRef, 0.018, 0.018);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    return () => clearInterval(moveInterval);
   }, []);
 
   return (
@@ -50,25 +50,32 @@ const HeroSection = () => {
           ref={yellowRef}
           className={`${styles.cursorMimic} ${styles.yellowCursor}`}
         />
+        <Fade direction="up" delay={0} duration={600} triggerOnce>
+          <h1>
+            We build high converting website for <br />{" "}
+            <span className={styles.highlight}>
+              Product & Software companies
+            </span>
+          </h1>
+        </Fade>
+        <Fade direction="up" delay={200} duration={600} triggerOnce>
+          <p>
+            We build websites for Product & Software companies which predictably
+            bring them more leads and build trust in their market segment
+          </p>
+        </Fade>
 
-        <h1>
-          We build high converting website for <br />{" "}
-          <span className={styles.highlight}>Product & Software companies</span>
-        </h1>
-        <p>
-          We build websites for Product & Software companies which predictably
-          bring them more leads and build trust in their market segment
-        </p>
-
-        <Link href={CALENDAR_LINK} className={styles.ctaButton}>
-          Book a Free Discovery Call{" "}
-          <img
-            src="/icons/arrow-up-right-fancy.svg"
-            alt="arrow right"
-            height="56px"
-            width="auto"
-          />
-        </Link>
+        <Fade delay={400} direction="up" duration={600} triggerOnce>
+          <Link href={CALENDAR_LINK} className={styles.ctaButton}>
+            Book a Free Discovery Call{" "}
+            <img
+              src="/icons/arrow-up-right-fancy.svg"
+              alt="arrow right"
+              height="56px"
+              width="auto"
+            />
+          </Link>
+        </Fade>
       </div>
     </section>
   );

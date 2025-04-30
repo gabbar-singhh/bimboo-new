@@ -13,6 +13,7 @@ body {
 
 body {
   /* cursor: url("/icons/cursors/you.svg") 6 6, auto; */
+  scroll-behavior: smooth;
 }
 
 * {

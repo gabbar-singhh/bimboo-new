@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import HeroSection from "@/Components/HeroSection/HeroSection";
@@ -5,11 +6,9 @@ import BrandsWorked from "@/Components/BrandsWorked/BrandsWorked";
 import CoreProblems from "@/Components/CoreProblems/CoreProblems";
 import CardStacking from "@/Components/CardStacking/CardStacking";
 import CaseStudy from "@/Components/CaseStudy/CaseStudy";
-import AboutMe from "@/Components/AboutMe/AboutMe";
-import Testimonial from "@/Components/Testimonial/Testimonial";
 import TestimonialStack from "@/Components/Testimonial/TestimonialStack";
-import MicDrop from "@/Components/MicDrop/MicDrop";
 import Navbar from "@/Components/Navbar/Navbar";
+import CoreProblemsNew from "@/Components/CoreProblems/CoreProblemsNew";
 
 export default function Home() {
   return (
@@ -20,14 +19,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="logo.png" />
       </Head>
-      <main>
-        <Navbar/>
+      <main data-scroll-container>
+        <Navbar />
         <HeroSection />
         <BrandsWorked />
-        <CoreProblems />
+        {/* <CoreProblems /> */}
+        <CoreProblemsNew/>
         <CardStacking />
         <CaseStudy />
-        <TestimonialStack/>
+        <TestimonialStack />
       </main>
     </>
   );
