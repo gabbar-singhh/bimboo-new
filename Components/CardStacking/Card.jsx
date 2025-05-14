@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./Card.module.css";
 import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -16,6 +16,55 @@ const Card = ({ i, title, description, src, progress, range, targetScale }) => {
 
   const scale = useTransform(progress, range, [1, targetScale]);
 
+  const [beforeVal, setBeforeVal] = useState({
+    img: `url("/service/research-check.png")`,
+    top: "55%",
+    right: "32%",
+  });
+
+  const [afterVal, setAfterVal] = useState({
+    img: `url("/service/strategy-check.png")`,
+    top: "20%",
+    right: "2%",
+  });
+
+  useEffect(() => {
+    if (i === 0) {
+      setBeforeVal({
+        img: `url("/service/research-check.png")`,
+        top: "55%",
+        right: "32%",
+      });
+      setAfterVal({
+        img: `url("/service/strategy-check.png")`,
+        top: "20%",
+        right: "2%",
+      });
+    } else if (i === 1) {
+      setBeforeVal({
+        img: `url("/service/cursor-check.png")`,
+        top: "58%",
+        right: "28%",
+      });
+      setAfterVal({
+        img: `url("/service/handshake-check.png")`,
+        top: "20%",
+        right: "2%",
+      });
+    } else if (i === 2) {
+      setBeforeVal({
+        img: `url("")`,
+        top: "0",
+        right: "0",
+      });
+      setAfterVal({
+        img: `url("/service/fast-check.png")`,
+        top: "20%",
+        right: "2%",
+      });
+    }
+  }, []);
+
   return (
     <div className={styles.cardContainer}>
       <div
@@ -23,6 +72,15 @@ const Card = ({ i, title, description, src, progress, range, targetScale }) => {
         style={{
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
+
+          "--floating-before-img": beforeVal.img,
+          "--floating-after-img": afterVal.img,
+
+          "--position-before-top": beforeVal.top,
+          "--position-before-right": beforeVal.right,
+
+          "--position-after-top": afterVal.top,
+          "--position-after-right": afterVal.right,
         }}
       >
         <div className={styles.body}>

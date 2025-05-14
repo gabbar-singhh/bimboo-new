@@ -16,7 +16,7 @@ const CoreProblemsNew = () => {
       </Fade>
 
       <ul className={styles.problemsContainer}>
-        <Fade cascade damping={0.15} triggerOnce duration={3000}>
+        <Fade cascade damping={0.15} triggerOnce duration={1500}>
           <li className={`${styles.box} ${styles.box1}`}>
             <h3 className={styles.boxCount}>1</h3>
             <p className={styles.boxText}>
@@ -33,7 +33,7 @@ const CoreProblemsNew = () => {
             </p>
           </li>
           <li className={`${styles.box} ${styles.box3}`}>
-            <h3 className={styles.boxCount}>33</h3>
+            <h3 className={styles.boxCount}>3</h3>
             <p className={styles.boxText}>
               Customers don't take you seriously. <br />
               <br /> Your website kills trust before you even get a chance.

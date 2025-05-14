@@ -38,15 +38,15 @@
 }
 
 .card::before {
-  background-image: url("/service/research-check.png");
-  top: 55%;
-  right: 32%;
+  background-image: var(--floating-before-img);
+  top: var(--position-before-top);
+  right: var(--position-before-right);
 }
 
 .card::after {
-  background-image: url("/service/strategy-check.png");
-  top: 20%;
-  right: 2%;
+  background-image: var(--floating-after-img);
+  top: var(--position-after-top);
+  right: var(--position-after-right);
   animation-delay: 2s;
 }
 
