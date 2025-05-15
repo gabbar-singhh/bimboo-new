@@ -62,7 +62,16 @@
     animation: scrollLeft 30s linear infinite;
 }
 
-.carouselWrapper:hover .scrollingTrack {
+.carouselWrapper .card {
+    height: fit-content;
+}
+
+.scrollingTrack {
+    animation: scroll 30s linear infinite;
+    animation-play-state: running;
+}
+
+.pauseAnimation .scrollingTrack {
     animation-play-state: paused;
 }
 
@@ -75,7 +84,6 @@
         transform: translateX(-50%);
     }
 }
-
 
 .ctaButton {
     color: #fff;

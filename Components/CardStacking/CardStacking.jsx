@@ -33,7 +33,7 @@ export default function Home() {
           />
         );
       })}
-      <div className={styles.wrapperCTA}>
+      {/* <div className={styles.wrapperCTA}> */}
         {/* 🔴 add shiny button animation and update the text also */}
         <Link className={styles.ctaButton} href={CALENDAR_LINK}>
           Secure Your {getCurrentMonth()} Slot
@@ -43,8 +43,8 @@ export default function Home() {
             height={"56px"}
             width={"auto"}
           />
+          
         </Link>
-      </div>
     </main>
   );
 }

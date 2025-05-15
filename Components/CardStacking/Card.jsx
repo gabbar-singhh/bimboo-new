@@ -53,12 +53,12 @@ const Card = ({ i, title, description, src, progress, range, targetScale }) => {
       });
     } else if (i === 2) {
       setBeforeVal({
-        img: `url("")`,
-        top: "0",
-        right: "0",
+        img: `url("/service/fast-check.png")`,
+        top: "70%",
+        right: "28%",
       });
       setAfterVal({
-        img: `url("/service/fast-check.png")`,
+        img: `url("/service/secure-check.png")`,
         top: "20%",
         right: "2%",
       });

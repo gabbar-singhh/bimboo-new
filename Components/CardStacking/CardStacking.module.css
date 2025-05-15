@@ -42,13 +42,6 @@
   background-color: #1a161e;
 }
 
-/* 
-.container .ctaButton:hover {
-  background-color: #773bc1;
-  border: 1px solid #585858;
-} */
-
-
 .ctaButton:hover {
   color: #fff;
   background-color: #221d27;

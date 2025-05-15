@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./TestimonialStack.module.css";
 import TestimonialCard from "./TestimonialCard";
 import Link from "next/link";
@@ -74,6 +74,8 @@ const TestimonialStack = () => {
     },
   ];
 
+  const [isPaused, setIsPaused] = useState(false);
+
   return (
     <section className={`${styles.main}`}>
       <div className={`${styles.container} ${styles.magicpattern}`}>
@@ -86,17 +88,27 @@ const TestimonialStack = () => {
           </p>
         </div>
 
-        <div className={styles.carouselWrapper}>
+        <div
+          className={`${styles.carouselWrapper} ${
+            isPaused ? styles.pauseAnimation : ""
+          }`}
+        >
           <div className={styles.scrollingTrack}>
             {TESTIMONIAL_DATA.concat(TESTIMONIAL_DATA).map(
               (testimonial, index) => (
-                <TestimonialCard
+                <div
+                  className={styles.card}
                   key={index}
-                  testimonialText={testimonial.testimonialText}
-                  name={testimonial.name}
-                  bio={testimonial.bio}
-                  imgSrc={testimonial.imgSrc}
-                />
+                  onMouseEnter={() => setIsPaused(true)}
+                  onMouseLeave={() => setIsPaused(false)}
+                >
+                  <TestimonialCard
+                    testimonialText={testimonial.testimonialText}
+                    name={testimonial.name}
+                    bio={testimonial.bio}
+                    imgSrc={testimonial.imgSrc}
+                  />
+                </div>
               )
             )}
           </div>
