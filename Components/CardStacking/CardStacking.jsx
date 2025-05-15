@@ -38,9 +38,9 @@ export default function Home() {
         <Link className={styles.ctaButton} href={CALENDAR_LINK}>
           Secure Your {getCurrentMonth()} Slot
           <img
-            src="/icons/arrow-up-right.svg"
+            src="icons/arrow-up-right-fancy.svg"
             alt="arrow right"
-            height={"22px"}
+            height={"56px"}
             width={"auto"}
           />
         </Link>

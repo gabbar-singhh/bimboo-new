@@ -71,19 +71,6 @@
     display: none;
 }
 
-
-.caseContainer::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 0;
-    width: 36px;
-    height: 100%;
-    background: linear-gradient(to left, #0a0a0a52, transparent);
-    z-index: 2;
-}
-
-
 /* CASE STUDY CARD */
 .card {
     border: 1px solid rgb(199 199 199 / 23%);
@@ -111,7 +98,7 @@
 }
 
 .cardContent .cardTitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     word-spacing: 1px;
     line-height: 150%;

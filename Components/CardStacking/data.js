@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Research-Based Messaging Strategy",
+    title: "Research-Based Content Strategy",
     description:
       "<p> We dig deep into your business, understand your USP, and identify what sets you apart from competitors. We build a website strategy that gets results. By analyzing your specific audience and market, we create clear messaging that connects and drives action.</p> <p>Our website copy speaks directly to your ideal customers—considering where they live, their age range, and how they make decisions online.</p>",
     src: "service/1.png",

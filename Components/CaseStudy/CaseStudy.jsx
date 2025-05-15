@@ -43,7 +43,7 @@ const CaseStudy = () => {
     },
     {
       title:
-        "How We Built an Online Recipe Sharing Platform using Next Js + Supabase along with Auth0 for Authentication.",
+        "How We Built an Online Recipe Sharing Platform using Next Js + Supabase along with Auth0.",
       description:
         "Discover how we built a lightning-fast, visually rich recipe platform that lets users explore, share, and save 3000+ recipes—with smooth navigation, mobile-first design, and seamless performance across all devices.",
       imageSrc: "/case-study/culinashare.png",
@@ -90,7 +90,7 @@ const CaseStudy = () => {
                 <div className={styles.cardContent}>
                   <span>
                     <h1 className={styles.cardTitle}>{caseStudy.title}</h1>
-                    <p className={styles.cardDesc}>{caseStudy.description}</p>
+                    {/* <p className={styles.cardDesc}>{caseStudy.description}</p> */}
                   </span>
                   <div className={styles.cardButtonGroup}>
                     <Link
