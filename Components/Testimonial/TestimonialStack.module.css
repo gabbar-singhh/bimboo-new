@@ -1,6 +1,7 @@
 .main {
     color: #fff;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 .magicpattern {
@@ -13,15 +14,12 @@
 
 .container {
     padding: 136px 0 96px 0;
-    margin: 0 auto;
-    border-top-right-radius: 1.4rem;
-    border-top-left-radius: 1.4rem;
-
-    border-radius: 1.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #0a0a0a, #0e0e10, #121115, #161419, #19161d, #1b181f, #1e1922, #201b24, #221c26, #231d28, #251f2a, #26202c);
 }
 
 .container .header {}
@@ -57,9 +55,9 @@
 .carouselWrapper .scrollingTrack {
     display: flex;
     width: max-content;
-    gap: 1.8rem;
+    gap: 1.25rem;
     margin-top: 3.2rem;
-    animation: scrollLeft 30s linear infinite;
+    animation: scrollLeft 50s linear infinite;
 }
 
 .carouselWrapper .card {
