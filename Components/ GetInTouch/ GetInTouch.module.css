@@ -1,0 +1,27 @@
+.main {
+    padding: 56px auto 124px auto;
+    color: #fff;
+}
+
+.container {
+    padding: 3.8rem;
+}
+
+.container .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.container .heading h1 {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 125%;
+    position: relative;
+}

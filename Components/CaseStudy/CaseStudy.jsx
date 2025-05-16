@@ -77,7 +77,7 @@ const CaseStudy = () => {
       </div>
 
       <div ref={scrollRef} className={styles.caseContainer}>
-        <Fade cascade damping={0.15} duration={2000}>
+        <Fade cascade damping={0.15} duration={2000} triggerOnce>
           {CASE_STUDY_DATA.map((caseStudy, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardContainer}>

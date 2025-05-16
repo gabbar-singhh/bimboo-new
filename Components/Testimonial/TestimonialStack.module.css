@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: linear-gradient(to bottom, #0a0a0a, #0e0e10, #121115, #161419, #19161d, #1b181f, #1e1922, #201b24, #221c26, #231d28, #251f2a, #26202c);
+    background-image: linear-gradient(to bottom, #0a0a0a, #100f12, #141317, #18161c, #1c1921, #1c1921, #1c1921, #1c1921, #18161c, #141317, #100f12, #0a0a0a);
 }
 
 .container .header {}

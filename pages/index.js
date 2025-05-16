@@ -9,6 +9,8 @@ import CaseStudy from "@/Components/CaseStudy/CaseStudy";
 import TestimonialStack from "@/Components/Testimonial/TestimonialStack";
 import Navbar from "@/Components/Navbar/Navbar";
 import CoreProblemsNew from "@/Components/CoreProblems/CoreProblemsNew";
+import GetInTouch from "@/Components/ GetInTouch/ GetInTouch";
+import Footer from "@/Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -23,11 +25,12 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <BrandsWorked />
-        {/* <CoreProblems /> */}
         <CoreProblemsNew/>
         <CardStacking />
         <CaseStudy />
         <TestimonialStack />
+        {/* <GetInTouch/> */}
+        <Footer/>
       </main>
     </>
   );
