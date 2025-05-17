@@ -29,12 +29,19 @@
 }
 
 .footContact h3 {
-font-size: 1rem;
-font-weight: 500;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.footContact p {
+.footContact a {
+    cursor: pointer;
     color: #ebebeb;
+    transition: all 400ms ease-in-out;
+}
+
+.footContact a:hover {
+    cursor: pointer;
+    color: #ebebeba6;
 }
 
 .rightFoot ul {
@@ -46,18 +53,23 @@ font-weight: 500;
 }
 
 .rightFoot ul li {
-     color: #bababa;
+    color: #bababa;
     letter-spacing: .4px;
     word-spacing: 1px;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 145%;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
 }
 
 
+.rightFoot ul li:hover {
+    color: #bababaa6;
+}
 
 .bottomFooter {
-    color: #bababa;
+    color: #bababaa6;
     font-size: 1rem;
     width: 100%;
     text-align: center;

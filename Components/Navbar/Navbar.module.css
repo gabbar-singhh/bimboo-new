@@ -34,6 +34,7 @@
 
 .navMain ul li {
     transition: all 500ms ease-in-out;
+    cursor: pointer;
 }
 
 .navMain ul li:hover {

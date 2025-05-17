@@ -19,7 +19,7 @@ export default function Home() {
   const CALENDAR_LINK = "https://cal.com/work-with-bimboo/30min";
 
   return (
-    <main className={styles.container} ref={container}>
+    <main className={styles.container} ref={container} id="services">
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (

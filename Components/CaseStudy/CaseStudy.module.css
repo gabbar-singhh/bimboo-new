@@ -2,6 +2,9 @@
     margin: 56px auto;
     margin-bottom: 124px;
     max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 136px 0 124px 0;
 }
 
 .header {
@@ -49,6 +52,10 @@
 
     transition: all 400ms ease-in-out;
     border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.header .headerRight .btns img {
     cursor: pointer;
 }
 
@@ -144,6 +151,10 @@
     gap: 0.4rem;
     transition: all 400ms ease-in-out;
     border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.cardButtonGroup .readNow img {
     cursor: pointer;
 }
 

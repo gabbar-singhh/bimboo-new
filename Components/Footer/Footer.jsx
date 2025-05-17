@@ -15,11 +15,21 @@ const Footer = () => {
         </div>
         <div className={styles.rightFoot}>
           <ul>
-            <li>Services</li>
-            <li>Linkedin</li>
-            <li>Case Study</li>
-            <li>Instagram</li>
-            <li>Testimonials</li>
+            <Link href={'#services'}>
+              <li>Services</li>
+            </Link>
+            <Link href={'https://www.linkedin.com/in/himanshufs/'} target="_blank">
+              <li>Linkedin</li>
+            </Link>
+            <Link href={'#case-study'}>
+              <li>Case Study</li>
+            </Link>
+            <Link href={'https://www.instagram.com/himanshu.fs/'} target="_blank">
+              <li>Instagram</li>
+            </Link>
+            <Link href={'#testimonials'}>
+              <li>Testimonials</li>
+            </Link>
           </ul>
         </div>
       </div>

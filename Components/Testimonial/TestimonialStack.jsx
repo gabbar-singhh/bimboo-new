@@ -77,7 +77,7 @@ const TestimonialStack = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section className={`${styles.main}`}>
+    <section className={`${styles.main}`} id="testimonials">
       <div className={`${styles.container} ${styles.magicpattern}`}>
         <div className={styles.header}>
           <h1 className={styles.testimonialHeading}>The Unfiltered Truth</h1>

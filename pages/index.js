@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import HeroSection from "@/Components/HeroSection/HeroSection";
@@ -13,6 +13,7 @@ import GetInTouch from "@/Components/ GetInTouch/ GetInTouch";
 import Footer from "@/Components/Footer/Footer";
 
 export default function Home() {
+   
   return (
     <>
       <Head>

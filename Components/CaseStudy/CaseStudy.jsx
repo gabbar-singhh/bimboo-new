@@ -53,7 +53,7 @@ const CaseStudy = () => {
   ];
 
   return (
-    <section className={styles.caseMain}>
+    <section className={styles.caseMain} id="case-study">
       <div className={styles.header}>
         <div className={styles.headerLeft}>
           <Fade delay={0} duration={1500} triggerOnce>
