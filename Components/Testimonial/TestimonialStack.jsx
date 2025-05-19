@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./TestimonialStack.module.css";
 import TestimonialCard from "./TestimonialCard";
 import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 
 const TestimonialStack = () => {
   const CALENDAR_LINK = "https://cal.com/work-with-bimboo/30min";
@@ -80,12 +81,16 @@ const TestimonialStack = () => {
     <section className={`${styles.main}`} id="testimonials">
       <div className={`${styles.container} ${styles.magicpattern}`}>
         <div className={styles.header}>
-          <h1 className={styles.testimonialHeading}>The Unfiltered Truth</h1>
+          <Fade delay={0} duration={1500} triggerOnce>
+            <h1 className={styles.testimonialHeading}>The Unfiltered Truth</h1>
+          </Fade>
 
-          <p className={styles.testimonialDesc}>
-            Experiences shared by ppl who've walked alongside us, shaped our
-            path, and witnessed our growth firsthand.
-          </p>
+          <Fade delay={200} duration={1500} triggerOnce>
+            <p className={styles.testimonialDesc}>
+              Experiences shared by ppl who've walked alongside us, shaped our
+              path, and witnessed our growth firsthand.
+            </p>
+          </Fade>
         </div>
 
         <div
@@ -94,23 +99,25 @@ const TestimonialStack = () => {
           }`}
         >
           <div className={styles.scrollingTrack}>
-            {TESTIMONIAL_DATA.concat(TESTIMONIAL_DATA).map(
-              (testimonial, index) => (
-                <div
-                  className={styles.card}
-                  key={index}
-                  onMouseEnter={() => setIsPaused(true)}
-                  onMouseLeave={() => setIsPaused(false)}
-                >
-                  <TestimonialCard
-                    testimonialText={testimonial.testimonialText}
-                    name={testimonial.name}
-                    bio={testimonial.bio}
-                    imgSrc={testimonial.imgSrc}
-                  />
-                </div>
-              )
-            )}
+            <Fade cascade damping={0.15} duration={1000} triggerOnce>
+              {TESTIMONIAL_DATA.concat(TESTIMONIAL_DATA).map(
+                (testimonial, index) => (
+                  <div
+                    className={styles.card}
+                    key={index}
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)}
+                  >
+                    <TestimonialCard
+                      testimonialText={testimonial.testimonialText}
+                      name={testimonial.name}
+                      bio={testimonial.bio}
+                      imgSrc={testimonial.imgSrc}
+                    />
+                  </div>
+                )
+              )}
+            </Fade>
           </div>
         </div>
       </div>

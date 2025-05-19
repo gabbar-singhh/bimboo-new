@@ -6,7 +6,10 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   return (
     <nav className={styles.navMain}>
-      <div onClick={() => window.location.href = "https://bimboo.co"} className={styles.logoImg}>
+      <div
+        onClick={() => (window.location.href = "/")}
+        className={styles.logoImg}
+      >
         <img src="/logo-type.svg" alt="logo" height="28px" width="auto" />
       </div>
       <ul>
