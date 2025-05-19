@@ -27,74 +27,96 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h2 className={styles.title}>Let’s build something.</h2>
+      <span className={styles.nameCompanySpan}>
+        <div className={styles.inputDiv}>
+          <label className={styles.label} htmlFor="name">
+            Name
+          </label>
+          <input
+            className={styles.input}
+            name="name"
+            type="text"
+            placeholder="Enter your full name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
-      <label htmlFor="name">Name</label>
-      <input
-        className={styles.input}
-        name="name"
-        type="text"
-        placeholder="Your name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-      />
+        <div className={styles.inputDiv}>
+          <label className={styles.label} htmlFor="company">
+            Company (optional)
+          </label>
+          <input
+            className={styles.input}
+            name="company"
+            type="text"
+            placeholder="Your company name"
+            value={formData.company}
+            onChange={handleChange}
+          />
+        </div>
+      </span>
 
-      <label htmlFor="email">Email</label>
-      <input
-        className={styles.input}
-        name="email"
-        type="email"
-        placeholder="Your email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-      />
+      <div className={styles.inputDiv}>
+        <label className={styles.label} htmlFor="email">
+          Business Email
+        </label>
+        <input
+          className={styles.input}
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+      </div>
 
-      <label htmlFor="company">Company</label>
-      <input
-        className={styles.input}
-        name="company"
-        type="text"
-        placeholder="Company name (optional)"
-        value={formData.company}
-        onChange={handleChange}
-      />
+      <div className={styles.inputDiv}>
+        <label className={styles.label} htmlFor="social">
+          Website / Social Media Link (optional)
+        </label>
+        <input
+          className={styles.input}
+          name="company"
+          type="text"
+          placeholder="https://yourwebsite.com"
+          value={formData.company}
+          onChange={handleChange}
+        />
+      </div>
 
-       <label htmlFor="social">Website / Social Media Link</label>
-      <input
-        className={styles.input}
-        name="company"
-        type="text"
-        placeholder="https://"
-        value={formData.company}
-        onChange={handleChange}
-      />
+      <div className={styles.inputDiv}>
+        <label className={styles.label} htmlFor="goal">
+          Tell me about your Project
+        </label>
+        <textarea
+          className={styles.textarea}
+          name="goal"
+          placeholder="What's on your mind?"
+          value={formData.goal}
+          onChange={handleChange}
+        />
+      </div>
 
-      <label htmlFor="goal">Tell me about your Project</label>
-      <textarea
-        className={styles.textarea}
-        name="goal"
-        placeholder="What’s your goal with this website?"
-        value={formData.goal}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="budget">
-        How much are you looking to invest on this project?
-      </label>
-      <select
-        className={styles.select}
-        name="budget"
-        value={formData.budget}
-        onChange={handleChange}
-      >
-        <option value="">Select</option>
-        <option value="<500">&#60; $500</option>
-        <option value="800-1200">$500 - $1500</option>
-        <option value="1800+">$1500 +</option>
-        <option value="unsure">Not sure yet</option>
-      </select>
+      <div className={styles.inputDiv}>
+        <label className={styles.label} htmlFor="budget">
+          How much are you looking to invest on this project?
+        </label>
+        <select
+          className={styles.select}
+          name="budget"
+          value={formData.budget}
+          onChange={handleChange}
+        >
+          <option value="">Select</option>
+          <option value="<500">&#60; $500</option>
+          <option value="800-1200">$500 - $1500</option>
+          <option value="1800+">$1500 +</option>
+          <option value="unsure">Not sure yet</option>
+        </select>
+      </div>
 
       <button className={styles.button} type="submit" disabled={submitted}>
         {submitted ? "Sent!" : "Submit"}

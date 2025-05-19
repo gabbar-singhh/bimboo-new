@@ -1,65 +1,135 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 2rem;
-  background-color: #111;
+  gap: 1.2rem;
+  padding: 1.8rem 2rem;
+  background-color: #141414;
   border-radius: 12px;
   color: #fff;
   font-family: 'Inter', sans-serif;
   box-shadow: 0 0 0 1px #222;
+  width: 572px;
 }
 
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.nameCompanySpan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nameCompanySpan div {
+  width: 48%;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: #e0e0e0;
+  letter-spacing: .4px;
+  word-spacing: 1px;
+  margin-top: .4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .input {
   padding: 0.8rem 1rem;
-  background-color: #1a1a1a;
+  background-color: #1f1f20;
   border: 1px solid #333;
   border-radius: 8px;
   color: #fff;
   font-size: 1rem;
+  outline: none;
+  cursor: text;
+}
+
+.input::placeholder {
+  letter-spacing: .4px;
+  word-spacing: 1px;
+  width: 556px;
+  margin-top: .4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 3px #2f2539;
+  border-color: #c7c7c73b;
+  transition: transform .4s ease;
 }
 
 .textarea {
   padding: 0.8rem 1rem;
-  background-color: #1a1a1a;
+  background-color: #1f1f20;
   border: 1px solid #333;
   border-radius: 8px;
   color: #fff;
   font-size: 1rem;
   resize: vertical;
   min-height: 100px;
+  outline: none;
+  cursor: text;
+}
+
+.textarea::placeholder {
+  width: 556px;
+  margin-top: .4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.textarea:focus {
+  box-shadow: 0 0 0 3px #2f2539;
+  border-color: #c7c7c73b;
+  transition: transform .4s ease;
 }
 
 .select {
   padding: 0.8rem 1rem;
-  background-color: #1a1a1a;
+  background-color: #1f1f20;
   border: 1px solid #333;
   border-radius: 8px;
-  color: #fff;
+  color: #757575;
   font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.select:focus {
+  box-shadow: 0 0 0 3px #2f2539;
+  border-color: #c7c7c73b;
+  transition: transform .4s ease;
 }
 
 .button {
-  background-color: #fff;
-  color: #111;
-  border: none;
+  color: #fff;
   padding: 0.9rem 1.2rem;
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 150%;
+
+  border: 1px solid #0000;
+  font-weight: 400;
+  transition: all 400ms ease-in-out;
+  background-color: #2d2635;
 }
 
-.button:hover:not(:disabled) {
-  background-color: #ccc;
+.button:hover {
+  color: #fff;
+  background-color: #231e29;
+  border: 1px solid #9696960d;
 }
 
 .button:disabled {

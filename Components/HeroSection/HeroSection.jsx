@@ -66,7 +66,7 @@ const HeroSection = () => {
         </Fade>
 
         <Fade delay={400} direction="up" duration={600} triggerOnce>
-          <Link href={CALENDAR_LINK} className={styles.ctaButton}>
+          <Link href={"#contact-us"} className={styles.ctaButton}>
             Book a Free Discovery Call{" "}
             <img
               src="/icons/arrow-up-right-fancy.svg"

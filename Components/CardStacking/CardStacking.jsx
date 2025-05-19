@@ -34,17 +34,16 @@ export default function Home() {
         );
       })}
       {/* <div className={styles.wrapperCTA}> */}
-        {/* 🔴 add shiny button animation and update the text also */}
-        <Link className={styles.ctaButton} href={CALENDAR_LINK}>
-          Secure Your {getCurrentMonth()} Slot
-          <img
-            src="icons/arrow-up-right-fancy.svg"
-            alt="arrow right"
-            height={"56px"}
-            width={"auto"}
-          />
-          
-        </Link>
+      {/* 🔴 add shiny button animation and update the text also */}
+      <Link className={styles.ctaButton} href={"#contact-us"}>
+        Secure Your {getCurrentMonth()} Slot
+        <img
+          src="icons/arrow-up-right-fancy.svg"
+          alt="arrow right"
+          height={"56px"}
+          width={"auto"}
+        />
+      </Link>
     </main>
   );
 }

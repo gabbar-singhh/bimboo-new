@@ -30,7 +30,7 @@ export default function Home() {
         <CardStacking />
         <CaseStudy />
         <TestimonialStack />
-        {/* <GetInTouch/> */}
+        <GetInTouch/>
         <Footer/>
       </main>
     </>

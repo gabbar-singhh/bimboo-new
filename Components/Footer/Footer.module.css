@@ -1,8 +1,11 @@
 .main {
-    background-color: #121212;
+    background-color: #1a1a1a;
     color: #fff;
     padding: 96px 84px;
     padding-bottom: 78px;
+
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
 }
 
 .container {
