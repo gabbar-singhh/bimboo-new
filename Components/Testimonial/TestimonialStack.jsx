@@ -82,7 +82,7 @@ const TestimonialStack = () => {
       <div className={`${styles.container} ${styles.magicpattern}`}>
         <div className={styles.header}>
           <Fade delay={0} duration={1500} triggerOnce>
-            <h1 className={styles.testimonialHeading}>The Unfiltered Truth</h1>
+            <h1 className={styles.testimonialHeading}>Here’s What They Say</h1>
           </Fade>
 
           <Fade delay={200} duration={1500} triggerOnce>

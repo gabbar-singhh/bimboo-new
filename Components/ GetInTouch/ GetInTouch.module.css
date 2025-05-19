@@ -48,22 +48,23 @@
     color: #e0e0e0;
     letter-spacing: .4px;
     word-spacing: 1px;
-    width: 556px;
     font-size: 18px;
     font-weight: 400;
     line-height: 150%;
 }
 
 .container .left ul a {
+    display: flex;
+    align-items: center;
     width: fit-content;
+    cursor: pointer;
 }
 
-.container .left ul li{
+.container .left ul li {
     display: flex;
     align-items: center;
     gap: 0.8rem;
-    width: fit-content;
-    padding-right: 1.6rem;
+    padding-right: 1.5rem;
     border-radius: 0.4rem;
     transition: all 400ms ease-in-out;
     cursor: pointer;
@@ -77,4 +78,5 @@
     background-color: #1d1921;
     border-radius: 0.4rem;
     padding: 10px;
+    cursor: pointer;
 }

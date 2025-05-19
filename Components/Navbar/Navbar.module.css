@@ -1,5 +1,5 @@
 .navMain {
-    background-color: #141414;
+    background-color: #1f1f1f;
     border-radius: 1.15rem;
     border: 1px solid #c7c7c70f;
 
@@ -16,6 +16,15 @@
     justify-content: space-between;
     gap: 248px;
     padding: 1.4rem 2.2rem 1.4rem 1.8rem;
+
+
+    background: #8d8d8d26;
+    box-shadow: 0 8px 32px 0 #d2d2d200;
+    -webkit-backdrop-filter: blur(44px);
+    backdrop-filter: blur(44px);
+    border-radius: 10px;
+    z-index: 9999;
+    background-blend-mode: multiply;
 }
 
 .navMain ul {
