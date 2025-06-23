@@ -5,15 +5,14 @@ import styles from "./Form.module.css";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     company: "",
-    service: "",
-    goal: "",
-    timeline: "",
+    email: "",
+    socialUrl: "",
+    projectInfo: "",
     budget: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [submitBtnText, setSubmitBtnText] = useState("Submit");
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,7 +21,12 @@ export default function ContactForm() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(formData);
-    setSubmitted(true);
+
+    setTimeout(() => {
+      setSubmitBtnText("- - -");
+    }, 3000);
+
+    setSubmitBtnText("Sent!");
   }
 
   return (
@@ -74,29 +78,30 @@ export default function ContactForm() {
       </div>
 
       <div className={styles.inputDiv}>
-        <label className={styles.label} htmlFor="social">
+        <label className={styles.label} htmlFor="socialUrl">
           Website / Social Media Link (optional)
         </label>
         <input
           className={styles.input}
-          name="company"
+          name="socialUrl"
           type="text"
           placeholder="https://yourwebsite.com"
-          value={formData.company}
+          value={formData.socialUrl}
           onChange={handleChange}
         />
       </div>
 
       <div className={styles.inputDiv}>
-        <label className={styles.label} htmlFor="goal">
+        <label className={styles.label} htmlFor="projectInfo">
           Tell me about your Project
         </label>
         <textarea
           className={styles.textarea}
-          name="goal"
+          name="projectInfo"
           placeholder="What's on your mind?"
-          value={formData.goal}
+          value={formData.projectInfo}
           onChange={handleChange}
+          required
         />
       </div>
 
@@ -109,17 +114,18 @@ export default function ContactForm() {
           name="budget"
           value={formData.budget}
           onChange={handleChange}
+          required
         >
           <option value="">Select</option>
           <option value="<500">&#60; $500</option>
-          <option value="800-1200">$500 - $1500</option>
-          <option value="1800+">$1500 +</option>
+          <option value="500-1500">$500 - $1500</option>
+          <option value="1500+">$1500 +</option>
           <option value="unsure">Not sure yet</option>
         </select>
       </div>
 
-      <button className={styles.button} type="submit" disabled={submitted}>
-        {submitted ? "Sent!" : "Submit"}
+      <button className={styles.button} type="submit">
+        {submitBtnText}
       </button>
     </form>
   );
