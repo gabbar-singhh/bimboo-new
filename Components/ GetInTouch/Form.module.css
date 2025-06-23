@@ -122,12 +122,12 @@
 
   border: 1px solid #0000;
   font-weight: 400;
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
   background-color: #4b3165;
 }
 
-.button:disabled {
-  cursor: default;
+.button:hover {
   opacity: 0.6;
-  background-color: #2d2635;
+  background-color: #4b3165;
+  background-color: #3f2a54;
 }

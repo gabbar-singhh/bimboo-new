@@ -1,6 +1,6 @@
-"use client";
 import { useState } from "react";
 import styles from "./Form.module.css";
+import { BeatLoader } from "react-spinners";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -12,22 +12,23 @@ export default function ContactForm() {
     budget: "",
   });
 
-  const [submitBtnText, setSubmitBtnText] = useState("Submit");
+  const [showLoader, setShowLoader] = useState(false);
+  const [submitButtonText, setSubmitButtonText] = useState("Submit");
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  }
-
-  function handleSubmit(e) {
+  };
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
 
-    setTimeout(() => {
-      setSubmitBtnText("- - -");
-    }, 3000);
+    setShowLoader(true);
 
-    setSubmitBtnText("Sent!");
-  }
+    setTimeout(() => {
+      setShowLoader(false);
+      setSubmitButtonText("Sent!");
+    }, 3000);
+  };
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
@@ -125,7 +126,16 @@ export default function ContactForm() {
       </div>
 
       <button className={styles.button} type="submit">
-        {submitBtnText}
+        {showLoader ? (
+          <BeatLoader
+            size={8}
+            color={"#e0e0e0"}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        ) : (
+          <>{submitButtonText}</>
+        )}
       </button>
     </form>
   );
