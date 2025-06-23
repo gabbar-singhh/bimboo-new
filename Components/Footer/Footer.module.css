@@ -19,11 +19,10 @@
 
 .leftFoot .footContact {
     margin: 2.4rem 0;
-
     color: #bababa;
     letter-spacing: .4px;
     word-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 400;
     line-height: 145%;
 
@@ -32,7 +31,7 @@
 }
 
 .footContact h3 {
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -47,10 +46,16 @@
     color: #ebebeba6;
 }
 
+.rightFoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+    margin-top: 2.4rem;
+}
+
 .rightFoot ul {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(156px, 1fr));
     gap: 1.25rem;
     font-size: 1rem;
 }
@@ -59,13 +64,13 @@
     color: #bababa;
     letter-spacing: .4px;
     word-spacing: 1px;
-    font-size: 1.2rem;
+    font-size: 17px;
     font-weight: 400;
     line-height: 145%;
-    cursor: pointer;
     transition: all 400ms ease-in-out;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
 }
-
 
 .rightFoot ul li:hover {
     color: #bababaa6;
@@ -73,7 +78,7 @@
 
 .bottomFooter {
     color: #bababaa6;
-    font-size: 1rem;
+    font-size: 15px;
     width: 100%;
     text-align: center;
     padding-top: 1.8rem;
