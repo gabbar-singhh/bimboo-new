@@ -34,7 +34,7 @@ const CaseStudy = () => {
     },
     {
       title:
-        "How We Helped an International Trading Company Launch Their Website in less than 4 weeks.",
+        "How We Helped an International Trading Company Launch Their Website in less than 3 weeks.",
       description:
         "We designed and built a clean, fast-loading website from scratch that establishes credibility, converts visitors with strategic CTAs, captures leads through custom forms, and reaches global audiences—all while maintaining a seamless user experience across all devices.",
       imageSrc: "/case-study/titc.png",
