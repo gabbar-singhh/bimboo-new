@@ -1,9 +1,8 @@
 .heroMain {
     height: 100vh;
     width: 100%;
-    opacity: 0.8;
 
-    background-image: radial-gradient(circle at center center, #562790, #e5e5f7), repeating-radial-gradient(circle at center center, #562790, #562790, 10px, transparent 20px, transparent 100px);
+    background-image: radial-gradient(circle at center center, #562790, #e5e5f7), repeating-radial-gradient(circle at center center, #562790, #562790, 10px, transparent 35px, transparent 100px);
 
     background-blend-mode: multiply;
 
@@ -23,9 +22,8 @@
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 1;
 
-    background: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.88) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #000 0%, rgba(0, 0, 0, 0.88) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #000 0%, rgba(0, 0, 0, 0.88) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #000 0%, rgba(0, 0, 0, 0.88) 50%) top right / 50% 50% no-repeat;
+    background: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) bottom right / 50.005% 50.005% no-repeat, linear-gradient(to bottom left, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) bottom left / 50.005% 50.005% no-repeat, linear-gradient(to top left, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) top left / 50.005% 50.005% no-repeat, linear-gradient(to top right, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) top right / 50.005% 50.005% no-repeat;
 }
-
 
 .heroMain .heroContainer {
     z-index: 2;
