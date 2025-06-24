@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./Form.module.css";
 import { BeatLoader } from "react-spinners";
+import IsEmail from "isemail";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,19 +17,75 @@ export default function ContactForm() {
   const [showLoader, setShowLoader] = useState(false);
   const [submitButtonText, setSubmitButtonText] = useState("Submit");
 
+  const [errorMessageVal, setErrorMessageVal] = useState(" ");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
 
-    setShowLoader(true);
+    sendToEmailJs();
+  };
 
-    setTimeout(() => {
-      setShowLoader(false);
-      setSubmitButtonText("Sent!");
-    }, 3000);
+  const sendToEmailJs = () => {
+    const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const EMAILJS_P_KEY = process.env.NEXT_PUBLIC_EMAILJS_P_KEY;
+
+    // ONLY IF ALL IMP FIELDS ARE VALID, THEN ONLY SEND DATA TO EMAILJS
+    if (
+      formData.name.trim().length !== 0 &&
+      IsEmail.validate(formData.email) === true &&
+      formData.projectInfo.trim().length !== 0 &&
+      formData.budget.trim().length !== 0
+    ) {
+      // SHOW LOADING IN BUTTON
+      setShowLoader(true);
+
+      const TEMPLATE_PARAMS = {
+        lead_name: formData.name,
+        company_name: formData.company,
+        lead_email: formData.email,
+        lead_social: formData.socialUrl,
+        project_info: formData.projectInfo,
+        lead_budget: formData.budget,
+      };
+
+      setErrorMessageVal(" ");
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, TEMPLATE_PARAMS, EMAILJS_P_KEY)
+        .then((res) => {
+          setTimeout(() => {
+            setShowLoader(false);
+            setFormData({
+              name: "",
+              company: "",
+              email: "",
+              socialUrl: "",
+              projectInfo: "",
+              budget: "",
+            });
+            setSubmitButtonText("Sent!");
+          }, 3000);
+
+          setTimeout(() => {
+            setSubmitButtonText("Submit");
+          }, 8000);
+        })
+        .catch((err) => {
+          console.log("🔴err: ", err);
+
+          setTimeout(() => {
+            setShowLoader(false);
+            setSubmitButtonText("Error Occured!");
+          }, 3000);
+        });
+    } else {
+      setErrorMessageVal("*fill valid details");
+    }
   };
 
   return (
@@ -124,6 +182,8 @@ export default function ContactForm() {
           <option value="unsure">Not sure yet</option>
         </select>
       </div>
+
+      <div className={styles.errorMssg}>{errorMessageVal}</div>
 
       <button className={styles.button} type="submit">
         {showLoader ? (
