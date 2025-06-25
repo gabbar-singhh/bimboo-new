@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
+.main {
+    color: #fff;
+    padding: 136px 0 72px 0;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container .featuresHeading {
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 155%;
+    color: #e0e0e0;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.bimboo {
+    /* color: #8944dd; */
+}
+
+.container .featuresList {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 2.4em;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.container .featuresList .feature {
+    padding: 1.2rem 2.4rem;
+}
+
+.featuresList .feature h3 {
+    letter-spacing: .4px;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.featuresList .feature p {
+    color: #bababa;
+    text-align: left;
+    letter-spacing: .4px;
+    word-spacing: 1px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}

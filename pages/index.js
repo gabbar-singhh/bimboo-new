@@ -11,6 +11,7 @@ import Navbar from "@/Components/Navbar/Navbar";
 import CoreProblemsNew from "@/Components/CoreProblems/CoreProblemsNew";
 import GetInTouch from "@/Components/ GetInTouch/ GetInTouch";
 import Footer from "@/Components/Footer/Footer";
+import Features from "@/Components/Features/Features";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <BrandsWorked />
         <CoreProblemsNew />
         <CardStacking />
+        <Features/>
         <CaseStudy />
         <TestimonialStack />
         <GetInTouch />
