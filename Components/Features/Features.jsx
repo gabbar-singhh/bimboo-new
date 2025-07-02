@@ -1,13 +1,17 @@
 import React from "react";
 import styles from "./Features.module.css";
+import { Fade } from "react-awesome-reveal";
 
 const Features = () => {
   return (
     <section className={styles.main}>
       <div className={styles.container}>
+         <Fade delay={0} duration={1500} triggerOnce>
         <h2 className={styles.featuresHeading}>What makes us <span className={styles.bimboo}>different?</span></h2>
+         </Fade>
 
         <ul className={styles.featuresList}>
+            <Fade cascade damping={0.15} triggerOnce duration={1500}>
           <li className={styles.feature}>
             <img
               src="/features/layout-dashboard.svg"
@@ -65,6 +69,7 @@ const Features = () => {
               performing
             </p>
           </li>
+          </Fade>
         </ul>
       </div>
     </section>

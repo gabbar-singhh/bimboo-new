@@ -27,7 +27,7 @@ const TestimonialStack = () => {
         </p>
       `,
       name: "Kayyush Thadani",
-      bio: "Founder @Thadani International Trading | Ex-Amazon India",
+      bio: "Ex-Amazon India | Founder @Thadani International Trading",
       imgSrc: "/testimonial/titc.png",
     },
     {
@@ -50,7 +50,7 @@ const TestimonialStack = () => {
         </p>
       `,
       name: "Piyush Pandey",
-      bio: "Full Stack Engineer @Hipla",
+      bio: "Software Engineer @Hipla",
       imgSrc: "/testimonial/hipla.png",
     },
     {
@@ -60,7 +60,7 @@ const TestimonialStack = () => {
         </p>
       `,
       name: "Disha Shah",
-      bio: "Founder & CEO @Gofig | Ex-Senior VP @Bobble AI | Ex- Director India, FrankfurtRheinMain GmbH | Angel Investor",
+      bio: "Shark Tank Founder | Ex-Senior VP @Bobble AI | Founder & CEO @Gofig",
       imgSrc: "/testimonial/gofig.png",
     },
     {
