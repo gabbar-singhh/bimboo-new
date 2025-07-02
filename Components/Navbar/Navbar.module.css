@@ -1,4 +1,8 @@
 .navMain {
+    /* position: relative; */
+}
+
+.navContainer {
     background-color: #1f1f1f;
     border-radius: 1.15rem;
     border: 1px solid #c7c7c70f;
@@ -9,14 +13,13 @@
     right: 0;
     z-index: 9999;
 
-    width: 80rem;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 248px;
     padding: 1.4rem 2.2rem 1.4rem 1.8rem;
-
 
     background: #8d8d8d26;
     box-shadow: 0 8px 32px 0 #d2d2d200;
@@ -48,4 +51,87 @@
 
 .navMain ul li:hover {
     color: #ebebeba6;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.menuBox {
+    display: none;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1032px) {
+
+    .navContainer {
+        width: 90%;
+        gap: 0;
+        z-index: 9999;
+    }
+
+    .navMain ul {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuBox {
+        position: absolute;
+        top: 6.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        z-index: 9999;
+        margin: 0 auto;
+        width: 90%;
+        height: 80vh;
+
+        display: flex;
+        background-color: #27262a;
+        border-radius: 10px;
+        border: 1px solid #c7c7c70f;
+        opacity: 0.998;
+
+        transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+
+        /*  might remove later?*/
+        background: #8d8d8d26;
+        box-shadow: 0 8px 32px 0 #d2d2d200;
+        -webkit-backdrop-filter: blur(44px);
+        backdrop-filter: blur(44px);
+        border-radius: 10px;
+        z-index: 9999;
+        background-blend-mode: multiply;
+    }
+
+    .menuBox .menuBoxList {
+        list-style-type: none;
+        color: #ebebeb;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 0.4px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        list-style-type: none;
+        gap: 2.4rem;
+        padding: 2.8rem;
+    }
+
+    .menuBox .menuBoxList li {
+        color: #fff;
+    }
+
+    .hide {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
