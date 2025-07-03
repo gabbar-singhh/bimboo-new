@@ -52,7 +52,7 @@ const HeroSection = () => {
         />
         <Fade direction="up" delay={0} duration={600} triggerOnce>
           <h1>
-            We build high converting website for <br />{" "}
+            We build high converting websites for <br className={styles.breakCancel} />{" "}
             <span className={styles.highlight}>
               Product & Software companies
             </span>
@@ -67,7 +67,7 @@ const HeroSection = () => {
 
         <Fade delay={400} direction="up" duration={600} triggerOnce>
           <Link href={"#contact-us"} className={styles.ctaButton}>
-            Book a Free Discovery Call{" "}
+            Book a Free <br className={styles.ctaBreakTag} /> Discovery Call{" "}
             <img
               src="/icons/arrow-up-right-fancy.svg"
               alt="arrow right"

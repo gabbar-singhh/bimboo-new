@@ -55,7 +55,7 @@
     line-height: 145%;
     color: #ebebeba6;
     font-weight: normal;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.8rem;
 }
 
 
@@ -123,4 +123,132 @@
     bottom: 15%;
     right: 10%;
     background-image: url("/icons/cursors/product.svg");
+}
+
+.ctaBreakTag {
+    display: none;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+    .heroMain {
+        height: 700px;
+    }
+
+    .heroMain .heroContainer {
+        margin-top: 6.4rem;
+    }
+
+    .heroMain .heroContainer h1 {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+    }
+
+    .heroMain .heroContainer p {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .heroMain .heroContainer .ctaButton {
+        font-size: 1rem;
+    }
+
+    .breakCancel {
+        display: none;
+    }
+
+    .ctaBreakTag {
+        display: block;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .heroMain {
+        height: 700px;
+    }
+
+    .heroMain .heroContainer {
+        margin-top: 6.4rem;
+    }
+
+    .heroMain .heroContainer h1 {
+        font-size: 2rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+    }
+
+    .heroMain .heroContainer p {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .heroMain .heroContainer .ctaButton {
+        font-size: 1rem;
+    }
+
+    .breakCancel {
+        display: none;
+    }
+
+    .ctaBreakTag {
+        display: block;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .heroMain .heroContainer {
+        margin-top: 6.4rem;
+    }
+
+    .heroMain .heroContainer h1 {
+        font-size: 2.4rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+    }
+
+    .heroMain .heroContainer p {
+        width: 80%;
+    }
+
+    .breakCancel {
+        display: none;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .heroMain .heroContainer {
+        margin-top: 3.6rem;
+    }
+
+    .heroMain .heroContainer h1 {
+        font-size: 3rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .heroMain .heroContainer {
+        margin-top: 4.8rem;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1272px) {
+    .heroMain .heroContainer h1 {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+    }
 }

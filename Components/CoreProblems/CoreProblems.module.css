@@ -24,7 +24,7 @@
     list-style-type: none;
     margin-top: 2.4rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(256px, 1fr));
     gap: 1.25em;
 }
 
@@ -80,4 +80,125 @@
     text-align: center;
     font-weight: 400;
     margin-top: 2.8rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+    .problemsMain {
+        padding: 0;
+        padding-bottom: 1rem;
+        width: 85%;
+    }
+
+    .problemsMain .problemsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .problemsMain .problemsContainer .box {
+        height: 216px;
+    }
+
+    .problemsMain .problemsHeading {
+        font-size: 1.2rem;
+    }
+
+    .boxCount {
+        display: none;
+    }
+
+    .box .boxText {
+        font-size: 1rem;
+    }
+
+
+    .problemsMain .problemsText {
+        font-size: 1rem;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .problemsMain {
+        padding: 0;
+        padding-bottom: 1rem;
+        width: 85%;
+    }
+
+    .problemsMain .problemsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .problemsMain .problemsContainer .box {
+        height: 216px;
+    }
+
+    .problemsMain .problemsHeading {
+        font-size: 1.2rem;
+    }
+
+    .boxCount {
+        display: none;
+    }
+
+    .box .boxText {
+        font-size: 1rem;
+    }
+
+
+    .problemsMain .problemsText {
+        font-size: 1rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .problemsMain {
+        padding: 42px 0;
+        width: 85%;
+    }
+
+    .problemsMain .problemsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .problemsMain .problemsContainer .box {
+        height: 216px;
+    }
+
+    .problemsMain .problemsHeading {
+        font-size: 1.4rem;
+    }
+
+    .boxCount {
+        display: none;
+    }
+
+    .box .boxText {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .problemsMain {
+        padding: 42px 0;
+        width: 85%;
+    }
+
+    .problemsMain .problemsContainer {
+        grid-template-columns: repeat(2, minmax(256px, 1fr));
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .problemsMain {
+        padding: 42px 0;
+        width: 85%;
+    }
 }

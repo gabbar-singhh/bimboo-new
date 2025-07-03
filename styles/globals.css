@@ -29,16 +29,17 @@ a {
 
 /* SCROLL CSS */
 body::-webkit-scrollbar {
-  width: 0.4em;
+  width: 0.2rem;
 }
 
 body::-webkit-scrollbar-track {
-  padding: 2em;
+  padding: 0.1rem;
+  /* background-color: #040306; */
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(164, 164, 164);
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
 }
 
 /* MEDIA QUERIES */
