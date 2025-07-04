@@ -2,8 +2,19 @@
 import React, { useRef, useState, useEffect } from "react";
 import styles from "./Card.module.css";
 import { useScroll, useTransform, motion } from "framer-motion";
+import Link from "next/link";
+import getCurrentMonth from "@/utils/getCurrentMonth";
 
-const Card = ({ i, title, description, src, progress, range, targetScale }) => {
+const Card = ({
+  i,
+  title,
+  description,
+  src,
+  progress,
+  range,
+  targetScale,
+  showCTA,
+}) => {
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -96,6 +107,17 @@ const Card = ({ i, title, description, src, progress, range, targetScale }) => {
           src={`/${src}`}
           alt="image"
         />
+        {showCTA && (
+          <Link className={styles.ctaButton} href={"#contact-us"}>
+            Secure Your {getCurrentMonth()} Slot
+            <img
+              src="icons/arrow-up-right-fancy.svg"
+              alt="arrow right"
+              height={"56px"}
+              width={"auto"}
+            />
+          </Link>
+        )}
       </div>
     </div>
   );

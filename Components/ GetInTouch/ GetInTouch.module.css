@@ -80,3 +80,109 @@
     padding: 10px;
     cursor: pointer;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 240px) and (max-width: 359px) {
+
+    .container {
+        gap: 42px;
+        flex-direction: column;
+
+        width: 85%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container .left h1 {
+        font-size: 1.4rem;
+    }
+
+    .container .left p {
+        width: 100%;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+    .container {
+        gap: 42px;
+        flex-direction: column;
+
+        width: 85%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container .left h1 {
+        font-size: 1.4rem;
+    }
+
+    .container .left p {
+        width: 100%;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        gap: 42px;
+        flex-direction: column;
+    }
+
+    .container .left h1 {
+        font-size: 1.6rem;
+    }
+
+    .container .left p {
+        width: 100%;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        gap: 42px;
+        flex-direction: column;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container {
+        gap: 48px;
+        width: 85%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container .left h1 {
+        font-size: 2.2rem;
+    }
+
+    .container .left p {
+        width: 100%;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width:1380px) {
+    .container {
+        gap: 48px;
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .container .left h1 {
+        font-size: 2.2rem;
+    }
+
+    .container .left p {
+        width: 452px;
+    }
+}

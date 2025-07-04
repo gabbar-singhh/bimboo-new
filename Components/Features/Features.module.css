@@ -27,10 +27,6 @@
     margin-bottom: 3.2rem;
 }
 
-.bimboo {
-    /* color: #8944dd; */
-}
-
 .container .featuresList {
     display: grid;
     grid-template-columns: repeat(3, minmax(400px, 1fr));
@@ -62,4 +58,115 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 150%;
+}
+
+/* MEDIA QUERIES */
+/*  */
+@media screen and (min-width: 240px) and (max-width: 359px) {
+    .container .featuresHeading {
+        font-size: 1.4rem;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 0.75rem;
+
+    }
+
+    .featuresList .feature h3 {
+        font-size: 1.2rem;
+    }
+
+    .container .featuresList {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0 2.2rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container .featuresHeading {
+        font-size: 1.4rem;
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 0.75rem;
+
+    }
+
+    .featuresList .feature h3 {
+        font-size: 1.2rem;
+    }
+
+    .container .featuresList {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0 2.2rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container .featuresHeading {
+        font-size: 1.6rem;
+    }
+
+    .featuresList .feature h3 {
+        font-size: 1.4rem;
+    }
+
+    .container .featuresList {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0 2.2rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container .featuresList {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0 2.2rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container .featuresList {
+        grid-template-columns: repeat(3, minmax(324px, 1fr));
+        gap: 0rem;
+        padding: 0 1.8rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width:1380px) {
+    .container .featuresList {
+        grid-template-columns: repeat(3, minmax(342px, 1fr));
+        gap: 1.2rem;
+    }
+
+    .container .featuresList .feature {
+        padding: 1.2rem 2.2rem;
+    }
 }

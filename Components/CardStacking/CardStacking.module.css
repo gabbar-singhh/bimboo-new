@@ -15,45 +15,18 @@
   align-items: center;
 }
 
-.container .ctaButton {
-  position: absolute;
-  bottom: 4.8rem;
-  left: 50%;
-  transform: translateX(-50%);
 
-  word-spacing: 1px;
-  line-height: 145%;
-  font-weight: normal;
-  margin: 0 auto;
-  color: #fff;
-  font-size: 1.2rem;
-  letter-spacing: 0.8px;
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {}
 
-  border: 1px solid #0a0a0a;
-  margin: 0 auto;
-  width: fit-content;
-  border-radius: 4rem;
-  padding: 1.4rem 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  transition: all 400ms ease-in-out;
-  background-color: #1a161e;
-  cursor: pointer;
-}
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
 
-.ctaButton:hover {
-  color: #fff;
-  background-color: #221d27;
-  border: 1px solid #9696960d;
-}
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
 
-.ctaButton img {
-  cursor: pointer;
-  transition: transform 400ms ease-in-out;
-}
-
-.ctaButton:hover img {
-  transform: rotate(35deg);
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  
 }

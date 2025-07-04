@@ -1,5 +1,6 @@
 .cardContainer {
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,4 +97,79 @@
 .cardImg {
   height: 100%;
   border-radius: 1.15rem;
+}
+
+/* cta button */
+.ctaButton {
+  position: absolute;
+  left: 50%;
+  bottom: -8.4rem;
+  transform: translateX(-50%);
+
+  word-spacing: 1px;
+  line-height: 145%;
+  font-weight: normal;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+
+  border: 1px solid #0a0a0a;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 4rem;
+  padding: 1.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  transition: all 400ms ease-in-out;
+  background-color: #1a161e;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  color: #fff;
+  background-color: #221d27;
+  border: 1px solid #9696960d;
+}
+
+.ctaButton img {
+  cursor: pointer;
+  transition: transform 400ms ease-in-out;
+}
+
+.ctaButton:hover img {
+  transform: rotate(35deg);
+}
+
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cardContainer {
+    width: 85%;
+  }
+
+  .cardContainer .card {
+    gap: 1rem;
+  }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .cardContainer {
+    width: 85%;
+  }
+
+  .cardContainer .card {
+    gap: 1.4rem;
+  }
+
 }

@@ -30,12 +30,12 @@ export default function Home() {
         <HeroSection />
         <BrandsWorked />
         <CoreProblemsNew />
-        {/* <CardStacking /> */}
-        {/* <Features/> */}
-        {/* <CaseStudy /> */}
-        {/* <TestimonialStack /> */}
-        {/* <GetInTouch /> */}
-        {/* <Footer /> */}
+        <CardStacking />
+        <Features/>
+        <CaseStudy />
+        <TestimonialStack />
+        <GetInTouch />
+        <Footer />
       </main>
     </>
   );

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./TestimonialStack.module.css";
 import TestimonialCard from "./TestimonialCard";
-import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 
 const TestimonialStack = () => {

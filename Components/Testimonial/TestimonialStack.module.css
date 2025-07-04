@@ -120,3 +120,31 @@
 .ctaButton:hover img {
     transform: rotate(35deg);
 }
+
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+     .container .testimonialHeading {
+        font-size: 1.4rem;
+    }
+
+    .container .testimonialDesc {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container .testimonialHeading {
+        font-size: 1.6rem;
+    }
+
+
+    .container .testimonialDesc {
+        width: 456px;
+    }
+
+}

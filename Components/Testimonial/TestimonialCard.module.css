@@ -58,3 +58,40 @@
     font-weight: 400;
     margin: 0;
 }
+
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .main {
+        width: 300px;
+        height: fit-content;
+        padding: 2.8rem 2.8rem 2rem 2.8rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .footer .content h2 {
+        font-size: 1rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .main {
+        width: 424px;
+        height: fit-content;
+        padding: 2.8rem 2.8rem 2rem 2.8rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .footer .content h2 {
+        font-size: 1rem;
+    }
+}
