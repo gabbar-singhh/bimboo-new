@@ -149,7 +149,24 @@
 @media screen and (min-width: 360px) and (max-width: 480px) {}
 
 /* IPADS AND TABLETS  */
-@media screen and (min-width: 481px) and (max-width: 768px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cardContainer .card {
+    flex-direction: column;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .card::after {
+    display: none;
+
+  }
+
+  .cardImg {
+    display: none;
+  }
+}
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -158,7 +175,15 @@
   }
 
   .cardContainer .card {
-    gap: 1rem;
+    gap: 1.4rem;
+  }
+
+  .card .body .cardHeading {
+    font-size: 1.4rem;
+  }
+
+  .cardImg {
+    height: 80%;
   }
 }
 

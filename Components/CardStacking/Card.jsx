@@ -44,7 +44,7 @@ const Card = ({
       setBeforeVal({
         img: `url("/service/research-check.png")`,
         top: "55%",
-        right: "32%",
+        right: "28%",
       });
       setAfterVal({
         img: `url("/service/strategy-check.png")`,
