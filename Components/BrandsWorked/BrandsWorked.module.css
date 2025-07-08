@@ -107,6 +107,7 @@
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .brandsMain {
         padding: 56px 0;
+        padding-bottom: 64px;
     }
 
     .brandsMain h2 {

@@ -56,4 +56,6 @@ body::-webkit-scrollbar-thumb {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {}
 
 /* EXTRA LARGE SCREENS & TV */
-@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1201px) {
+  
+}

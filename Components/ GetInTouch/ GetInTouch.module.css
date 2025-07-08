@@ -102,6 +102,12 @@
     .container .left p {
         width: 100%;
     }
+
+    .main {
+        padding: 0;
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
 }
 
 /* AVERAGE MOBILE DEVICES  */
@@ -123,10 +129,22 @@
     .container .left p {
         width: 100%;
     }
+
+    .main {
+        padding: 0;
+        padding-top: 64px;
+        padding-bottom: 72px;
+    }
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 0;
+        padding-top: 56px;
+        padding-bottom: 72px;
+    }
+
     .container {
         gap: 42px;
         flex-direction: column;
@@ -147,6 +165,12 @@
     .container {
         gap: 42px;
         flex-direction: column;
+    }
+
+    .main {
+        padding: 0;
+        padding-top: 124px;
+        padding-bottom: 72px;
     }
 }
 

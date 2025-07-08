@@ -2,7 +2,7 @@
 
 .main {
     color: #fff;
-    padding: 136px 0 72px 0;
+    padding: 124px 0 72px 0;
 
     max-width: 1000px;
     margin: 0 auto;
@@ -84,6 +84,11 @@
     .container .featuresList .feature {
         padding: 1.2rem 1rem;
     }
+
+      .main {
+           padding: 0;
+        padding-top: 96px;
+    }
 }
 
 /* AVERAGE MOBILE DEVICES  */
@@ -109,10 +114,20 @@
     .container .featuresList .feature {
         padding: 1.2rem 1rem;
     }
+
+      .main {
+           padding: 0;
+        padding-top: 84px;
+    }
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .main {
+           padding: 0;
+        padding-top: 72px;
+    }
 
     .container .featuresHeading {
         font-size: 1.6rem;
@@ -135,6 +150,13 @@
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .main {
+        color: #fff;
+        padding: 0;
+        padding-top: 124px;
+    }
+
     .container .featuresList {
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         gap: 1rem;

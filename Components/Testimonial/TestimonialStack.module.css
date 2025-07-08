@@ -125,7 +125,7 @@
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 0) and (max-width: 359px) {
-     .container .testimonialHeading {
+    .container .testimonialHeading {
         font-size: 1.2rem;
     }
 
@@ -133,17 +133,27 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    .container {
+        padding: 0;
+        padding-top: 96px;
+    }
 }
 
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
-     .container .testimonialHeading {
+    .container .testimonialHeading {
         font-size: 1.4rem;
     }
 
     .container .testimonialDesc {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .container {
+        padding: 0;
+        padding-top: 124px;
     }
 }
 
@@ -159,4 +169,27 @@
         width: 456px;
     }
 
+    .container {
+        padding: 0;
+        padding-top: 136px;
+    }
+
+}
+
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        padding: 0;
+        padding-top: 136px;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container {
+        padding: 56px 0;
+    }
 }

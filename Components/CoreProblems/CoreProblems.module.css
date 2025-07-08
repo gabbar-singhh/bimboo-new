@@ -1,5 +1,5 @@
 .problemsMain {
-    padding: 124px 0;
+    padding: 56px 0;
     color: #fff;
 
     max-width: 1000px;
@@ -155,7 +155,7 @@
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .problemsMain {
-        padding: 42px 0;
+        padding: 72px 0;
         width: 85%;
     }
 
@@ -197,6 +197,13 @@
 
 /* DESKTOP AND LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .problemsMain {
+        padding: 42px 0;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1200px) {
     .problemsMain {
         padding: 42px 0;
         width: 85%;
