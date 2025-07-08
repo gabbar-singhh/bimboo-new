@@ -28,13 +28,13 @@ const Card = ({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   const [beforeVal, setBeforeVal] = useState({
-    img: `url("/service/research-check.png")`,
+    img: `url("/service/research-check.webp")`,
     top: "55%",
     right: "32%",
   });
 
   const [afterVal, setAfterVal] = useState({
-    img: `url("/service/strategy-check.png")`,
+    img: `url("/service/strategy-check.webp")`,
     top: "20%",
     right: "2%",
   });
@@ -58,34 +58,34 @@ const Card = ({
       // default
       if (i === 0) {
         setBeforeVal({
-          img: `url("/service/research-check.png")`,
+          img: `url("/service/research-check.webp")`,
           top: "55%",
           right: "28%",
         });
         setAfterVal({
-          img: `url("/service/strategy-check.png")`,
+          img: `url("/service/strategy-check.webp")`,
           top: "20%",
           right: "2%",
         });
       } else if (i === 1) {
         setBeforeVal({
-          img: `url("/service/cursor-check.png")`,
+          img: `url("/service/cursor-check.webp")`,
           top: "58%",
           right: "28%",
         });
         setAfterVal({
-          img: `url("/service/handshake-check.png")`,
+          img: `url("/service/handshake-check.webp")`,
           top: "20%",
           right: "2%",
         });
       } else if (i === 2) {
         setBeforeVal({
-          img: `url("/service/fast-check.png")`,
+          img: `url("/service/fast-check.webp")`,
           top: "70%",
           right: "28%",
         });
         setAfterVal({
-          img: `url("/service/secure-check.png")`,
+          img: `url("/service/secure-check.webp")`,
           top: "20%",
           right: "2%",
         });
@@ -94,34 +94,34 @@ const Card = ({
       // actual mobile
       if (i === 0) {
         setBeforeVal({
-          img: `url("/service/research-check.png")`,
+          img: `url("/service/research-check.webp")`,
           top: "55%",
           right: "8%",
         });
         setAfterVal({
-          img: `url("/service/strategy-check.png")`,
+          img: `url("/service/strategy-check.webp")`,
           top: "80%",
           right: "60%",
         });
       } else if (i === 1) {
         setBeforeVal({
-          img: `url("/service/cursor-check.png")`,
+          img: `url("/service/cursor-check.webp")`,
           top: "52%",
           right: "8%",
         });
         setAfterVal({
-          img: `url("/service/handshake-check.png")`,
+          img: `url("/service/handshake-check.webp")`,
           top: "80%",
           right: "60%",
         });
       } else if (i === 2) {
         setBeforeVal({
-          img: `url("/service/fast-check.png")`,
+          img: `url("/service/fast-check.webp")`,
           top: "52%",
           right: "8%",
         });
         setAfterVal({
-          img: `url("/service/secure-check.png")`,
+          img: `url("/service/secure-check.webp")`,
           top: "80%",
           right: "60%",
         });
@@ -157,7 +157,7 @@ const Card = ({
         <motion.img
           style={{ scale: imageScale }}
           className={styles.cardImg}
-          src={`/${src}${isMobile ? "-mobile.png" : ".png"}`}
+          src={`/${src}${isMobile ? "-mobile.webp" : ".webp"}`}
           alt="image"
         />
         {showCTA && (

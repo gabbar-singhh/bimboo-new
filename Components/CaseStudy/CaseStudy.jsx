@@ -28,7 +28,7 @@ const CaseStudy = () => {
         "How We Designed a Website + Content Management System for China's Leading First Aid Manufacturer.",
       description:
         " Designed a professional, product-focused website with Contentful CMS for a Chinese first aid manufacturer, boosting credibility and streamlining catalog management while facilitating global client engagement.",
-      imageSrc: "/case-study/godetiamedical.png",
+      imageSrc: "/case-study/godetiamedical.webp",
       pageURL:
         "https://bimboo-case-study.super.site/database/how-we-designed-a-website-cms-for-chinas-leading-first-aid-manufacturer",
     },
@@ -37,7 +37,7 @@ const CaseStudy = () => {
         "How We Helped an International Trading Company Launch Their Website in less than 3 weeks.",
       description:
         "We designed and built a clean, fast-loading website from scratch that establishes credibility, converts visitors with strategic CTAs, captures leads through custom forms, and reaches global audiences—all while maintaining a seamless user experience across all devices.",
-      imageSrc: "/case-study/titc.png",
+      imageSrc: "/case-study/titc.webp",
       pageURL:
         "https://bimboo-case-study.super.site/how-we-helped-an-international-trading-company-launch-their-website-in-30-days",
     },
@@ -46,7 +46,7 @@ const CaseStudy = () => {
         "How We Built an Online Recipe Sharing Platform using Next Js + Supabase along with Auth0.",
       description:
         "Discover how we built a lightning-fast, visually rich recipe platform that lets users explore, share, and save 3000+ recipes—with smooth navigation, mobile-first design, and seamless performance across all devices.",
-      imageSrc: "/case-study/culinashare.png",
+      imageSrc: "/case-study/culinashare.webp",
       pageURL:
         "https://bimboo-case-study.super.site/how-we-built-an-online-recipe-sharing-platform",
     },
