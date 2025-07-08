@@ -24,6 +24,23 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="logo.svg" />
+
+        {/* OG META TAGS */}
+        <meta
+          property="og:title"
+          content="Web Design Agency for Product/Software Companies"
+        />
+        <meta
+          property="og:description"
+          content="We build websites for Product & Software companies which bring them more leads and build trust in their market segment."
+        />
+        {/* <meta
+          property="og:image"
+          content="https://yourwebsite.com/path-to-image.jpg"
+        /> */}
+        <meta property="og:url" content="https://www.bimboo.co/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Bimboo" />
       </Head>
       <main data-scroll-container>
         <Navbar />
@@ -31,7 +48,7 @@ export default function Home() {
         <BrandsWorked />
         <CoreProblemsNew />
         <CardStacking />
-        <Features/>
+        <Features />
         <CaseStudy />
         <TestimonialStack />
         <GetInTouch />
