@@ -27,7 +27,7 @@ const TestimonialStack = () => {
       `,
       name: "Kayyush Thadani",
       bio: "Ex-Amazon India | Founder @Thadani International Trading",
-      imgSrc: "/testimonial/titc.png",
+      imgSrc: "/testimonial/titc.webp",
     },
     {
       testimonialText: `
@@ -40,7 +40,7 @@ const TestimonialStack = () => {
       `,
       name: "Paul",
       bio: "Founder & CEO @Godetia Medical",
-      imgSrc: "/testimonial/godetia.png",
+      imgSrc: "/testimonial/godetia.webp",
     },
     {
       testimonialText: `
@@ -50,7 +50,7 @@ const TestimonialStack = () => {
       `,
       name: "Piyush Pandey",
       bio: "Software Engineer @Hipla",
-      imgSrc: "/testimonial/hipla.png",
+      imgSrc: "/testimonial/hipla.webp",
     },
     {
       testimonialText: `
@@ -60,7 +60,7 @@ const TestimonialStack = () => {
       `,
       name: "Disha Shah",
       bio: "Shark Tank Founder | Ex-Senior VP @Bobble AI | Founder & CEO @Gofig",
-      imgSrc: "/testimonial/gofig.png",
+      imgSrc: "/testimonial/gofig.webp",
     },
     {
       testimonialText: `
@@ -70,7 +70,7 @@ const TestimonialStack = () => {
       `,
       name: "Buildspace",
       bio: "we're the place where people build cool stuff. backed by a16z + y combinator.",
-      imgSrc: "/testimonial/buildspace.png",
+      imgSrc: "/testimonial/buildspace.webp",
     },
   ];
 
