@@ -123,6 +123,18 @@
 
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 0) and (max-width: 359px) {
+     .container .testimonialHeading {
+        font-size: 1.2rem;
+    }
+
+    .container .testimonialDesc {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
      .container .testimonialHeading {

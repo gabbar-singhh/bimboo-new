@@ -146,7 +146,7 @@
 
 /* MEDIA QUERIES */
 /*  */
-@media screen and (min-width: 240px) and (max-width: 359px) {
+@media screen and (min-width: 0) and (max-width: 359px) {
 
   .cardContainer .card {
     flex-direction: column;
@@ -162,7 +162,7 @@
   }
 
   .card .body .cardHeading {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .card .body {
