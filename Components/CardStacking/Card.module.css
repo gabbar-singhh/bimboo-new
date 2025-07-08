@@ -145,31 +145,128 @@
 
 
 /* MEDIA QUERIES */
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 360px) and (max-width: 480px) {}
+/*  */
+@media screen and (min-width: 240px) and (max-width: 359px) {
 
-/* IPADS AND TABLETS  */
-@media screen and (min-width: 481px) and (max-width: 768px) {
   .cardContainer .card {
     flex-direction: column;
+    width: 90%;
+    height: 500px;
+    gap: 1rem;
+    padding: 1.8rem 1.5rem;
   }
 
+  .card::after,
   .card::before {
     display: none;
   }
 
-  .card::after {
-    display: none;
+  .card .body .cardHeading {
+    font-size: 1.4rem;
+  }
 
+  .card .body {
+    padding-left: 0;
   }
 
   .cardImg {
     display: none;
   }
+
+  .ctaButton {
+    font-size: 1rem;
+    gap: 0.25rem;
+    width: 218px;
+  }
+
+  .ctaButton img {
+    height: 42px;
+  }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+
+  .cardContainer {
+    height: 115vh;
+  }
+
+  .cardContainer .card {
+    flex-direction: column;
+    width: 90%;
+    height: 456px;
+    gap: 1rem;
+    padding: 1.8rem 1.5rem;
+  }
+
+  .card::after,
+  .card::before {
+    display: none;
+  }
+
+  .card .body .cardHeading {
+    font-size: 1.4rem;
+  }
+
+  .card .body {
+    padding-left: 0;
+  }
+
+  .cardImg {
+    display: none;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    gap: 0.25rem;
+    width: 236px;
+  }
+
+  .ctaButton img {
+    height: 42px;
+  }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 739px) {
+
+  .cardContainer {
+    height: 110vh;
+  }
+
+  .cardContainer .card {
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    gap: 1rem;
+    padding: 1.8rem 1.5rem;
+  }
+
+  .card .body .cardHeading {
+    font-size: 1.4rem;
+  }
+
+  .card .body {
+    padding-left: 0;
+  }
+
+  .cardImg {
+    width: 75%;
+    height: 75%;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+  }
+
+  .ctaButton img {
+    height: 42px;
+  }
+
 }
 
 /* SMALL SCREEN */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 740px) and (max-width: 1024px) {
   .cardContainer {
     width: 85%;
   }

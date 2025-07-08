@@ -39,42 +39,95 @@ const Card = ({
     right: "2%",
   });
 
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
-    if (i === 0) {
-      setBeforeVal({
-        img: `url("/service/research-check.png")`,
-        top: "55%",
-        right: "28%",
-      });
-      setAfterVal({
-        img: `url("/service/strategy-check.png")`,
-        top: "20%",
-        right: "2%",
-      });
-    } else if (i === 1) {
-      setBeforeVal({
-        img: `url("/service/cursor-check.png")`,
-        top: "58%",
-        right: "28%",
-      });
-      setAfterVal({
-        img: `url("/service/handshake-check.png")`,
-        top: "20%",
-        right: "2%",
-      });
-    } else if (i === 2) {
-      setBeforeVal({
-        img: `url("/service/fast-check.png")`,
-        top: "70%",
-        right: "28%",
-      });
-      setAfterVal({
-        img: `url("/service/secure-check.png")`,
-        top: "20%",
-        right: "2%",
-      });
-    }
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 740);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    console.log("isMobile:  ", isMobile);
+    if (!isMobile) {
+      // default
+      if (i === 0) {
+        setBeforeVal({
+          img: `url("/service/research-check.png")`,
+          top: "55%",
+          right: "28%",
+        });
+        setAfterVal({
+          img: `url("/service/strategy-check.png")`,
+          top: "20%",
+          right: "2%",
+        });
+      } else if (i === 1) {
+        setBeforeVal({
+          img: `url("/service/cursor-check.png")`,
+          top: "58%",
+          right: "28%",
+        });
+        setAfterVal({
+          img: `url("/service/handshake-check.png")`,
+          top: "20%",
+          right: "2%",
+        });
+      } else if (i === 2) {
+        setBeforeVal({
+          img: `url("/service/fast-check.png")`,
+          top: "70%",
+          right: "28%",
+        });
+        setAfterVal({
+          img: `url("/service/secure-check.png")`,
+          top: "20%",
+          right: "2%",
+        });
+      }
+    } else {
+      // actual mobile
+      if (i === 0) {
+        setBeforeVal({
+          img: `url("/service/research-check.png")`,
+          top: "55%",
+          right: "8%",
+        });
+        setAfterVal({
+          img: `url("/service/strategy-check.png")`,
+          top: "80%",
+          right: "60%",
+        });
+      } else if (i === 1) {
+        setBeforeVal({
+          img: `url("/service/cursor-check.png")`,
+          top: "52%",
+          right: "8%",
+        });
+        setAfterVal({
+          img: `url("/service/handshake-check.png")`,
+          top: "80%",
+          right: "60%",
+        });
+      } else if (i === 2) {
+        setBeforeVal({
+          img: `url("/service/fast-check.png")`,
+          top: "52%",
+          right: "8%",
+        });
+        setAfterVal({
+          img: `url("/service/secure-check.png")`,
+          top: "80%",
+          right: "60%",
+        });
+      }
+    }
+  }, [isMobile]);
 
   return (
     <div className={styles.cardContainer}>
@@ -104,7 +157,7 @@ const Card = ({
         <motion.img
           style={{ scale: imageScale }}
           className={styles.cardImg}
-          src={`/${src}`}
+          src={`/${src}${isMobile ? "-mobile.png" : ".png"}`}
           alt="image"
         />
         {showCTA && (
