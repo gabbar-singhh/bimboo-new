@@ -39,6 +39,7 @@ export default function Home() {
           content="https://www.bimboo.co/"
         />
         <meta property="og:url" content="https://www.bimboo.co/og-img.jpg" />
+        <meta property="og:url" content="https://bimboo.co/og-img.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Bimboo" />
       </Head>
