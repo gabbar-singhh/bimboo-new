@@ -19,15 +19,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: 1;
 
     background: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) bottom right / 50.005% 50.005% no-repeat, linear-gradient(to bottom left, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) bottom left / 50.005% 50.005% no-repeat, linear-gradient(to top left, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) top left / 50.005% 50.005% no-repeat, linear-gradient(to top right, #000 0%, rgba(0, 0, 0, 0.88) 50.005%) top right / 50.005% 50.005% no-repeat;
 }
 
-.heroMain .heroContainer {
-    z-index: 2;
-}
+.heroMain .heroContainer {}
 
 .heroMain .heroContainer h1 {
     text-align: center;
@@ -105,7 +101,6 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: transform 2s ease-in-out;
-    z-index: 999;
 }
 
 .greenCursor {
