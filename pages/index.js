@@ -20,7 +20,7 @@ export default function Home() {
         <title>Web Design Agency for Product/Software Companies</title>
         <meta
           name="description"
-          content="We build websites for Product & Software companies which bring them more leads and build trust in their market segment."
+          content="We build high performing websites for Product & Software companies which bring them more leads and build trust in their market segment."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="logo.svg" />
@@ -28,11 +28,11 @@ export default function Home() {
         {/* OG META TAGS */}
         <meta
           property="og:title"
-          content="Web Design Agency for Product/Software Companies"
+          content="Web Design Agency for Product/Software Companies | Bimboo"
         />
         <meta
           property="og:description"
-          content="We build websites for Product & Software companies which bring them more leads and build trust in their market segment."
+          content="We build high performing websites for Product & Software companies which bring them more leads and build trust in their market segment."
         />
         <meta
           property="og:image"
