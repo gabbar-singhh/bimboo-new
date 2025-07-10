@@ -25,10 +25,18 @@ const CaseStudy = () => {
   const CASE_STUDY_DATA = [
     {
       title:
+        "How We Designed a Product Landing Page for a Finance Management Software.",
+      description:
+        "We built a high performance landing page for a finance management software from scratch in less 2 weeks, explaining their product features and what they do.",
+      imageSrc: "/case-study/spendly.webp",
+      pageURL: "#",
+    },
+    {
+      title:
         "How We Designed a Website + Content Management System for China's Leading First Aid Manufacturer.",
       description:
         " Designed a professional, product-focused website with Contentful CMS for a Chinese first aid manufacturer, boosting credibility and streamlining catalog management while facilitating global client engagement.",
-      imageSrc: "/case-study/godetiamedical.webp",
+      imageSrc: "/case-study/godetia.webp",
       pageURL:
         "https://bimboo-case-study.super.site/database/how-we-designed-a-website-cms-for-chinas-leading-first-aid-manufacturer",
     },
