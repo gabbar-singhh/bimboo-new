@@ -34,12 +34,9 @@ export default function Home() {
           property="og:description"
           content="We build high performing websites for Product & Software companies which bring them more leads and build trust in their market segment."
         />
-        <meta
-          property="og:image"
-          content="https://www.bimboo.co/"
-        />
-        <meta property="og:url" content="https://www.bimboo.co/og-img.jpg" />
-        <meta property="og:url" content="https://bimboo.co/og-img.jpg" />
+        <meta property="og:image" content="https://bimboo.co/og-img.jpg" />
+        <meta property="og:url" content="https://www.bimboo.co/" />
+        <meta property="og:url" content="https://bimboo.co/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Bimboo" />
       </Head>
