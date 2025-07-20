@@ -34,7 +34,7 @@ const Footer = () => {
               <li>Linkedin</li>
             </Link>
             <Link
-              href={"https://www.instagram.com/himanshu.fs/"}
+              href={"https://www.instagram.com/bimboo.agency/"}
               target="_blank"
             >
               <li>Instagram</li>
