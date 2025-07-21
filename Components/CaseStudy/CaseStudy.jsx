@@ -25,11 +25,12 @@ const CaseStudy = () => {
   const CASE_STUDY_DATA = [
     {
       title:
-        "How We Designed a Product Landing Page for a Finance Management Software.",
+        "How We Helped an International Trading Company Launch Their Website in less than 3 weeks.",
       description:
-        "We built a high performance landing page for a finance management software from scratch in less 2 weeks, explaining their product features and what they do.",
-      imageSrc: "/case-study/spendly.webp",
-      pageURL: "#",
+        "We designed and built a clean, fast-loading website from scratch that establishes credibility, converts visitors with strategic CTAs, captures leads through custom forms, and reaches global audiences—all while maintaining a seamless user experience across all devices.",
+      imageSrc: "/case-study/titc.webp",
+      pageURL:
+        "https://bimboo-case-study.super.site/how-we-helped-an-international-trading-company-launch-their-website-in-30-days",
     },
     {
       title:
@@ -42,21 +43,20 @@ const CaseStudy = () => {
     },
     {
       title:
-        "How We Helped an International Trading Company Launch Their Website in less than 3 weeks.",
-      description:
-        "We designed and built a clean, fast-loading website from scratch that establishes credibility, converts visitors with strategic CTAs, captures leads through custom forms, and reaches global audiences—all while maintaining a seamless user experience across all devices.",
-      imageSrc: "/case-study/titc.webp",
-      pageURL:
-        "https://bimboo-case-study.super.site/how-we-helped-an-international-trading-company-launch-their-website-in-30-days",
-    },
-    {
-      title:
         "How We Built an Online Recipe Sharing Platform using Next Js + Supabase along with Auth0.",
       description:
         "Discover how we built a lightning-fast, visually rich recipe platform that lets users explore, share, and save 3000+ recipes—with smooth navigation, mobile-first design, and seamless performance across all devices.",
       imageSrc: "/case-study/culinashare.webp",
       pageURL:
         "https://bimboo-case-study.super.site/how-we-built-an-online-recipe-sharing-platform",
+    },
+    {
+      title:
+        "How We Designed a Product Landing Page for a Finance Management Software.",
+      description:
+        "We built a high performance landing page for a finance management software from scratch in less 2 weeks, explaining their product features and what they do.",
+      imageSrc: "/case-study/spendly.webp",
+      pageURL: "#",
     },
   ];
 
